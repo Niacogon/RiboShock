@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <nodes version="2.18.0.1">
-	<node type="NodeDummy" id="728087883" name="pist">
+	<node type="NodeDummy" id="1700264739" name="pist">
 		<transform>1 2.646978e-22 -3.8213714e-15 0.0 9.2644229e-23 1 8.7422777e-08 0.0 3.8213714e-15 -8.7422777e-08 1 0.0 0 0 0 1.0</transform>
-		<node type="ObjectMeshStatic" id="1985507886" immovable="1" name="pist">
+		<node type="ObjectMeshStatic" id="1986111014" immovable="1" name="pist">
 			<streaming_mode_vram>0</streaming_mode_vram>
 			<streaming_mode_ram>0</streaming_mode_ram>
 			<mesh_name>guid://b8961a86937a715dc860e47514fa3e7d765f1859</mesh_name>

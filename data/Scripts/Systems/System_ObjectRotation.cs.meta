@@ -2,7 +2,7 @@
 <asset version="2.18.0.1">
 	<guid>e471722e1532a62c17f687fd4efe67575f018461</guid>
 	<type>component</type>
-	<hash>cf102fa2</hash>
+	<hash>8b7b3cc8</hash>
 	<runtimes>
 		<runtime id="e471722e1532a62c17f687fd4efe67575f018461" name="System_ObjectRotation.cs" link="0"/>
 		<runtime id="12eae39c619497ecc2a48e93417d3b53a075c817" name="System_ObjectRotation.prop" link="1" type="4"/>

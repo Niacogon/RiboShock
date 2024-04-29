@@ -2,7 +2,7 @@
 <asset version="2.18.0.1">
 	<guid>50472b3e4c0d3f4797a5cdcd7e1d5c05b0e16f31</guid>
 	<type>fbx</type>
-	<hash>ac2171f6</hash>
+	<hash>04c6f8a8</hash>
 	<runtimes>
 		<runtime id="50472b3e4c0d3f4797a5cdcd7e1d5c05b0e16f31" name="pist.fbx" link="0"/>
 		<runtime id="45aed77efcccf13627a630733d1cbb7d89426462" name="pist.node" link="1" type="3">
@@ -12,7 +12,7 @@
 		</runtime>
 		<runtime id="b8961a86937a715dc860e47514fa3e7d765f1859" name="pist.mesh" link="2" type="1">
 			<parameters>
-				<parameter type="string" name="id">44cd8768</parameter>
+				<parameter type="string" name="id">9f0540d</parameter>
 			</parameters>
 		</runtime>
 	</runtimes>
@@ -52,7 +52,7 @@
 		<parameter type="int" name="num_lods">3</parameter>
 		<parameter type="string" name="prefix_materials"/>
 		<parameter type="string" name="resolution">256</parameter>
-		<parameter type="float" name="scale">2.5</parameter>
+		<parameter type="float" name="scale">1</parameter>
 		<parameter type="bool" name="skip_empty_nodes">0</parameter>
 		<parameter type="int" name="smooth_animation_size">0</parameter>
 		<parameter type="bool" name="unwrap_uv_ch_0">0</parameter>
