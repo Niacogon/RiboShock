@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.18.0.1">
+	<node type="NodeDummy" id="1580136476" name="aero">
+		<transform>1 2.646978e-22 -3.8213714e-15 0.0 9.2644229e-23 1 8.7422777e-08 0.0 3.8213714e-15 -8.7422777e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="1986573515" immovable="1" name="aero">
+			<streaming_mode_vram>0</streaming_mode_vram>
+			<streaming_mode_ram>0</streaming_mode_ram>
+			<mesh_name>guid://307618c9a9b9b4ab53229f2a00f14ff03ffb4446</mesh_name>
+			<surface name="material.008" intersection="1" material="f6985d631f40b897a38e09acc57ee3b4972f14a8"/>
+			<surface name="material.007" intersection="1" material="cc487d37d21f789a1b49c7d0ff8a73044076f70c"/>
+			<surface name="material.006" intersection="1" material="19f5154b4e7efbfbfdb20f346d939e4fdadc74b0"/>
+			<surface name="material.004" intersection="1" material="d312999fc34489e5d0a423d8c7b89edae7a8d194"/>
+			<transform>1 6.9377098e-23 3.8213714e-15 0.0 2.4143067e-22 1 -8.7422777e-08 0.0 -3.8213714e-15 8.7422777e-08 1 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

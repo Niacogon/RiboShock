@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.18.0.1" name="System_ObjectRotation" guid="12eae39c619497ecc2a48e93417d3b53a075c817" parent="657ecdbbfc83135a26777f86012da3587b67be0c" editable="0">
+	<parameter name="rotationMultiply" type="vec3" title="Множитель" tooltip="Умножается ось для поворотц
+0 - нет поворота по оси">0 0 1</parameter>
+	<parameter name="rotationSpeed" type="float" title="Скорость поворота">1</parameter>
+</property>

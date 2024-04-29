@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.18.0.1">
+	<guid>fd742aa5edface168b0008084d4c6ecf90d46da1</guid>
+	<type>material</type>
+	<hash>2467b7b5</hash>
+	<runtimes>
+		<runtime id="fd742aa5edface168b0008084d4c6ecf90d46da1" name="emmision" link="0" type="5"/>
+	</runtimes>
+</asset>

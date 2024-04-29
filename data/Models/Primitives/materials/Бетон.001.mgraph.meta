@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.18.0.1">
+	<guid>c05835ebfbb9b583b6eaae96c610525e63173747</guid>
+	<type>material_graph</type>
+	<hash>3eecfbda</hash>
+	<runtimes>
+		<runtime id="c05835ebfbb9b583b6eaae96c610525e63173747" name="Бетон.001.mgraph" link="0"/>
+		<runtime id="e6b1bf15e0bf60cdb418b1b89a028a9482092b11" name="Бетон.001" link="1" type="5"/>
+	</runtimes>
+</asset>
