@@ -836,6 +836,17 @@
 			<is_listener>1</is_listener>
 			<controlled>1</controlled>
 			<transform>-0.88920206 0.45742446 -0.0090784719 0.0 -0.019245936 -0.01757264 0.99966025 0.0 0.45710957 0.88907474 0.024429141 0.0 -4.8000011 -17.100004 1.0000002 1.0</transform>
+			<node type="PhysicalTrigger" id="1495078331" name="InteractZone">
+				<type>1</type>
+				<size>1.5 1 1</size>
+				<exclusion_mask>0x0</exclusion_mask>
+				<properties>
+					<property parent="7afcd4924f248e54ece8a8a2d8c94fa4a77913dd" guid="60f325b14dec58f2c65124e14bc384a3f4f2b2e0">
+						<parameter name="physicalTrigger">1495078331</parameter>
+					</property>
+				</properties>
+				<transform>1.0000001 0 0 0.0 0 5.9604641e-08 -0.99999988 0.0 0 0.99999964 5.9604627e-08 0.0 0 0 0 1.0</transform>
+			</node>
 		</node>
 		<node type="NodeDummy" id="1328170195" name="World">
 			<transform>0.99999994 0 0 0.0 0 0.99999994 0 0.0 0 0 0.99999994 0.0 0 0 0 1.0</transform>
@@ -990,7 +1001,7 @@
 				</node>
 			</node>
 			<node type="NodeDummy" id="170100981" name="Q4_4_1">
-				<transform>-0.00021147748 1.4841555e-05 0.24999988 0.0 1.2926648e-08 0.25 -1.4841551e-05 0.0 -0.2499999 3.7152859e-10 -0.00021147727 0.0 -6.1000004 -21.200001 0.50000006 1.0</transform>
+				<transform>-0.00025892278 1.4841554e-05 0.24999984 0.0 1.5827027e-08 0.25 -1.4841547e-05 0.0 -0.24999988 4.5520213e-10 -0.00025892258 0.0 -6.1000004 -21.200001 0.50000006 1.0</transform>
 				<node type="ObjectMeshStatic" id="1220249040" immovable="1" name="Q4_4_4">
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
@@ -1001,18 +1012,18 @@
 				</node>
 			</node>
 			<node type="NodeDummy" id="566356477" name="Q4_4_2">
-				<transform>-0.00021147748 1.4841555e-05 0.24999988 0.0 1.2926648e-08 0.25 -1.4841551e-05 0.0 -0.24999991 3.7152859e-10 -0.00021147728 0.0 -8.1000013 -21.200001 0.50000006 1.0</transform>
+				<transform>-0.00025892272 1.484155e-05 0.24999978 0.0 1.5827027e-08 0.25 -1.4841547e-05 0.0 -0.24999988 4.5520213e-10 -0.00025892258 0.0 -8 -21.200001 0.50000006 1.0</transform>
 				<node type="ObjectMeshStatic" id="272081720" immovable="1" name="Q4_4_4">
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
 					<mesh_name>guid://8bac1a380073855be529393b12d75068f28cceec</mesh_name>
 					<surface name="light concrete" intersection="1" collision="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
 					<surface name="bark" intersection="1" collision="1" material="fd742aa5edface168b0008084d4c6ecf90d46da1"/>
-					<transform>1.0000006 4.7293724e-11 6.7710993e-05 0.0 -4.7293724e-11 0.99999988 -9.8667428e-08 0.0 -6.7710993e-05 9.86727e-08 1.0000004 0.0 -2.30968e-07 -1.1999969 1.6000061 1.0</transform>
+					<transform>1.0000005 4.7293724e-11 -1.1641532e-10 0.0 -5.0931703e-11 0.99999964 -8.8863061e-08 0.0 0 8.8863118e-08 1.0000002 0.0 -1.1920929e-07 -1 2.0000076 1.0</transform>
 				</node>
 			</node>
 			<node type="NodeDummy" id="717393207" name="Q4_4_3">
-				<transform>-0.00021147748 1.4841555e-05 0.24999988 0.0 1.2926648e-08 0.25 -1.4841551e-05 0.0 -0.24999991 3.7152859e-10 -0.00021147728 0.0 -10.099999 -21.200001 0.50000006 1.0</transform>
+				<transform>-0.00025892272 1.484155e-05 0.24999978 0.0 1.5827027e-08 0.25 -1.4841547e-05 0.0 -0.24999988 4.5520213e-10 -0.00025892258 0.0 -10.1 -21.200001 0.50000006 1.0</transform>
 				<node type="ObjectMeshStatic" id="921897258" immovable="1" name="Q4_4_4">
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
@@ -1023,7 +1034,7 @@
 				</node>
 			</node>
 			<node type="NodeDummy" id="1099376257" name="Q4_4_5">
-				<transform>-0.00021147748 1.4841555e-05 0.24999988 0.0 1.2926648e-08 0.25 -1.4841551e-05 0.0 -0.24999993 3.7152861e-10 -0.00021147729 0.0 -12.100001 -21.200001 0.50000006 1.0</transform>
+				<transform>-0.00025892272 1.484155e-05 0.24999978 0.0 1.5827027e-08 0.25 -1.4841547e-05 0.0 -0.24999988 4.5520213e-10 -0.00025892258 0.0 -12.100001 -21.200001 0.50000006 1.0</transform>
 				<node type="ObjectMeshStatic" id="742149612" immovable="1" name="Q4_4_4">
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
@@ -1034,7 +1045,7 @@
 				</node>
 			</node>
 			<node type="NodeDummy" id="513208411" name="Q4_4_6">
-				<transform>-0.00021147748 1.4841555e-05 0.24999988 0.0 1.2926648e-08 0.25 -1.4841551e-05 0.0 -0.24999994 3.7152864e-10 -0.00021147731 0.0 -14.100002 -21.200001 0.50000006 1.0</transform>
+				<transform>-0.00025892272 1.484155e-05 0.24999978 0.0 1.5827027e-08 0.25 -1.4841547e-05 0.0 -0.24999988 4.5520213e-10 -0.00025892258 0.0 -14.1 -21.200001 0.50000006 1.0</transform>
 				<node type="ObjectMeshStatic" id="1723886078" immovable="1" name="Q4_4_4">
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
@@ -1045,7 +1056,7 @@
 				</node>
 			</node>
 			<node type="NodeDummy" id="733286797" name="Q4_4_7">
-				<transform>-0.00021147748 1.4841555e-05 0.24999988 0.0 1.2926648e-08 0.25 -1.4841551e-05 0.0 -0.24999994 3.7152864e-10 -0.00021147731 0.0 -22.1 -21.200001 0.50000006 1.0</transform>
+				<transform>-0.00025892272 1.484155e-05 0.24999978 0.0 1.5827027e-08 0.25 -1.4841547e-05 0.0 -0.24999988 4.5520213e-10 -0.00025892258 0.0 -22.099997 -21.200001 0.50000006 1.0</transform>
 				<node type="ObjectMeshStatic" id="1348732296" immovable="1" name="Q4_4_4">
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
@@ -1056,7 +1067,7 @@
 				</node>
 			</node>
 			<node type="NodeDummy" id="905931591" name="Q4_4_8">
-				<transform>-0.00021147748 1.4841555e-05 0.24999988 0.0 1.2926648e-08 0.25 -1.4841551e-05 0.0 -0.24999993 3.7152861e-10 -0.00021147729 0.0 -20.099998 -21.200001 0.50000006 1.0</transform>
+				<transform>-0.00025892272 1.484155e-05 0.24999978 0.0 1.5827027e-08 0.25 -1.4841547e-05 0.0 -0.24999988 4.5520213e-10 -0.00025892258 0.0 -20.099995 -21.200001 0.50000006 1.0</transform>
 				<node type="ObjectMeshStatic" id="957657082" immovable="1" name="Q4_4_4">
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
@@ -1067,7 +1078,7 @@
 				</node>
 			</node>
 			<node type="NodeDummy" id="268664593" name="Q4_4_9">
-				<transform>-0.00021147748 1.4841555e-05 0.24999988 0.0 1.2926648e-08 0.25 -1.4841551e-05 0.0 -0.24999993 3.7152861e-10 -0.00021147729 0.0 -18.1 -21.200001 0.50000006 1.0</transform>
+				<transform>-0.00025892272 1.484155e-05 0.24999978 0.0 1.5827027e-08 0.25 -1.4841547e-05 0.0 -0.24999988 4.5520213e-10 -0.00025892258 0.0 -18.099997 -21.200001 0.50000006 1.0</transform>
 				<node type="ObjectMeshStatic" id="1508257084" immovable="1" name="Q4_4_4">
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
@@ -1078,7 +1089,7 @@
 				</node>
 			</node>
 			<node type="NodeDummy" id="1845569387" name="Q4_4_10">
-				<transform>-0.00021147748 1.4841555e-05 0.24999988 0.0 1.2926648e-08 0.25 -1.4841551e-05 0.0 -0.24999991 3.7152859e-10 -0.00021147728 0.0 -16.1 -21.200001 0.50000006 1.0</transform>
+				<transform>-0.00025892272 1.484155e-05 0.24999978 0.0 1.5827027e-08 0.25 -1.4841547e-05 0.0 -0.24999988 4.5520213e-10 -0.00025892258 0.0 -16.099997 -21.200001 0.50000006 1.0</transform>
 				<node type="ObjectMeshStatic" id="564499918" immovable="1" name="Q4_4_4">
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
@@ -1089,7 +1100,7 @@
 				</node>
 			</node>
 			<node type="NodeDummy" id="212181717" name="Q4_4_11">
-				<transform>-0.00021147748 1.4841555e-05 0.24999988 0.0 1.2926648e-08 0.25 -1.4841551e-05 0.0 -0.24999997 3.715287e-10 -0.00021147734 0.0 -24.100002 -21.200001 0.50000006 1.0</transform>
+				<transform>-0.00025892272 1.484155e-05 0.24999978 0.0 1.5827027e-08 0.25 -1.4841547e-05 0.0 -0.24999988 4.5520213e-10 -0.00025892258 0.0 -24.100002 -21.200001 0.50000006 1.0</transform>
 				<node type="ObjectMeshStatic" id="1183192624" immovable="1" name="Q4_4_4">
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
@@ -1104,7 +1115,7 @@
 			<properties>
 				<property parent="12eae39c619497ecc2a48e93417d3b53a075c817" guid="952fb7b83e6f247ca5135bffab8c7266fcf4f043"/>
 			</properties>
-			<transform>0.99999988 2.6469767e-22 -3.8213697e-15 0.0 6.937706e-23 0.99999988 8.7422762e-08 0.0 3.8213697e-15 -8.7422762e-08 0.99999994 0.0 -6.4999995 -21.499998 1.3 1.0</transform>
+			<transform>0.99999988 2.6469767e-22 -3.8213697e-15 0.0 6.937706e-23 0.99999988 8.7422762e-08 0.0 3.8213697e-15 -8.7422762e-08 0.99999994 0.0 -6.4999995 -21.399998 1.3 1.0</transform>
 			<node type="ObjectMeshStatic" id="1470834684" name="pist">
 				<streaming_mode_vram>0</streaming_mode_vram>
 				<streaming_mode_ram>0</streaming_mode_ram>
@@ -1115,14 +1126,24 @@
 				<surface name="material.003" intersection="1" material="f0bff31c6e98abbeea6b5109b48d60cd6e26a360"/>
 				<surface name="material.002" intersection="1" material="09bc1ea449b0dae876ad50b170c8a6c3dfdfbe68"/>
 				<surface name="material.001" intersection="1" material="3d6a7f2c34342a05dee2195901446ac25d377670"/>
-				<transform>1 6.9377098e-23 3.8213714e-15 0.0 2.4143067e-22 1 -8.7422777e-08 0.0 -3.8213714e-15 8.7422777e-08 1 0.0 0 0 0 1.0</transform>
+				<body type="BodyDummy" id="368290744" frozen="0">
+					<shape type="ShapeSphere" id="892468151" transform="1 0 0 0 0 1 0 0 0 0 1 0 -0.00107050745 -0.00173312891 -0.0100977942 1">
+						<radius>0.300000012</radius>
+					</shape>
+				</body>
+				<properties>
+					<property parent="3e63fd7363fc488ffd8cbe23907da8d846e3aa9a" guid="c19ff96d2ad3763dad90e59dcf8c7d80ee257c2c">
+						<parameter name="itemName">Пистолет</parameter>
+					</property>
+				</properties>
+				<transform>1 6.9377104e-23 3.8213714e-15 0.0 2.4143112e-22 1 -8.7422848e-08 0.0 -3.8213714e-15 8.7422848e-08 1 0.0 0 0 -3.6501206e-08 1.0</transform>
 			</node>
 		</node>
 		<node type="NodeDummy" id="1759201994" name="aero">
 			<properties>
 				<property parent="12eae39c619497ecc2a48e93417d3b53a075c817" guid="a47119c06fc47eaec6764d3d179891c33ae55cc4"/>
 			</properties>
-			<transform>0.99999988 2.6469767e-22 -3.8213697e-15 0.0 6.937706e-23 0.99999988 8.7422762e-08 0.0 3.8213697e-15 -8.7422762e-08 0.99999994 0.0 -8.5 -21.499998 1.3 1.0</transform>
+			<transform>0.99999988 2.6469767e-22 -3.8213697e-15 0.0 6.937706e-23 0.99999988 8.7422762e-08 0.0 3.8213697e-15 -8.7422762e-08 0.99999994 0.0 -8.499999 -21.499998 1.3 1.0</transform>
 			<node type="ObjectMeshStatic" id="1024998305" name="aero">
 				<streaming_mode_vram>0</streaming_mode_vram>
 				<streaming_mode_ram>0</streaming_mode_ram>
@@ -1131,29 +1152,48 @@
 				<surface name="material.007" intersection="1" material="cc487d37d21f789a1b49c7d0ff8a73044076f70c"/>
 				<surface name="material.006" intersection="1" material="19f5154b4e7efbfbfdb20f346d939e4fdadc74b0"/>
 				<surface name="material.004" intersection="1" material="d312999fc34489e5d0a423d8c7b89edae7a8d194"/>
-				<transform>1 6.9377098e-23 3.8213714e-15 0.0 2.4143067e-22 1 -8.7422777e-08 0.0 -3.8213714e-15 8.7422777e-08 1 0.0 0 0 0 1.0</transform>
+				<body type="BodyDummy" id="892468151" frozen="0">
+					<shape type="ShapeSphere" id="1864541610" transform="1 0 0 0 0 1 0 0 0 0 1 0 -0.000332349038 0.0834910274 0.0172789171 1">
+						<radius>0.300000012</radius>
+					</shape>
+				</body>
+				<properties>
+					<property parent="3e63fd7363fc488ffd8cbe23907da8d846e3aa9a" guid="c0df1d252afafae0c51113558a63ab55f1949c04">
+						<parameter name="itemName">Аэро-пушка</parameter>
+					</property>
+				</properties>
+				<transform>1 6.9377104e-23 3.8213714e-15 0.0 2.4143097e-22 1 -8.7422826e-08 0.0 -3.8213714e-15 8.7422826e-08 1 0.0 0 0 -2.7758915e-08 1.0</transform>
 			</node>
 		</node>
-		<node type="NodeDummy" id="1950448685" name="GUI">
+		<node type="NodeDummy" id="2027196382" name="---Game Play---">
 			<properties>
-				<property parent="19a98c3a54473992ed5bfbb41ba488c6910440a1" guid="7969b618f42d1a734ae61202d86b2266e58eb067"/>
+				<property parent="57eba3dc6afedf451ddcf06c50374d05d7e748bf" guid="8d77c3f8ea7c666c255f9b88fd98b73214554c6b"/>
 			</properties>
 			<transform>0.99999994 0 0 0.0 0 0.99999994 0 0.0 0 0 0.99999994 0.0 0 0 0 1.0</transform>
-			<node type="NodeDummy" id="214289038" name="Text">
+			<node type="NodeDummy" id="1950448685" name="GUI">
+				<properties>
+					<property parent="19a98c3a54473992ed5bfbb41ba488c6910440a1" guid="7969b618f42d1a734ae61202d86b2266e58eb067">
+						<parameter name="interactionZone">60f325b14dec58f2c65124e14bc384a3f4f2b2e0</parameter>
+						<parameter name="interactionColor">1 0 1 0.784313798</parameter>
+					</property>
+				</properties>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
-				<node type="NodeDummy" id="2030882965" name="Point">
-					<properties>
-						<property parent="57f1a9a97eee3e3ddc4a7387020fb9b4f905f29a" guid="db57af0162913ab022e4061f96285b02ebf1c252">
-							<parameter name="widgetCustomSettings">1</parameter>
-							<parameter name="widgetCentrPivot">1</parameter>
-							<parameter name="widgetPosition">0.5 0.5</parameter>
-							<parameter name="widgetColor">1 1 1 0.784313798</parameter>
-							<parameter name="widgetText">•</parameter>
-							<parameter name="widgetTextSize">30</parameter>
-							<parameter name="widgetTextOutline">1</parameter>
-						</property>
-					</properties>
+				<node type="NodeDummy" id="214289038" name="Text">
 					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+					<node type="NodeDummy" id="2030882965" name="Point">
+						<properties>
+							<property parent="57f1a9a97eee3e3ddc4a7387020fb9b4f905f29a" guid="db57af0162913ab022e4061f96285b02ebf1c252">
+								<parameter name="widgetCustomSettings">1</parameter>
+								<parameter name="widgetCentrPivot">1</parameter>
+								<parameter name="widgetPosition">0.5 0.5</parameter>
+								<parameter name="widgetColor">1 1 1 0.784313798</parameter>
+								<parameter name="widgetText">•</parameter>
+								<parameter name="widgetTextSize">30</parameter>
+								<parameter name="widgetTextOutline">1</parameter>
+							</property>
+						</properties>
+						<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+					</node>
 				</node>
 			</node>
 		</node>
