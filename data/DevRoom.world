@@ -1172,10 +1172,7 @@
 			<transform>0.99999994 0 0 0.0 0 0.99999994 0 0.0 0 0 0.99999994 0.0 0 0 0 1.0</transform>
 			<node type="NodeDummy" id="1950448685" name="GUI">
 				<properties>
-					<property parent="19a98c3a54473992ed5bfbb41ba488c6910440a1" guid="7969b618f42d1a734ae61202d86b2266e58eb067">
-						<parameter name="interactionZone">60f325b14dec58f2c65124e14bc384a3f4f2b2e0</parameter>
-						<parameter name="interactionColor">1 0 1 0.784313798</parameter>
-					</property>
+					<property parent="19a98c3a54473992ed5bfbb41ba488c6910440a1" guid="7969b618f42d1a734ae61202d86b2266e58eb067"/>
 				</properties>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
 				<node type="NodeDummy" id="214289038" name="Text">
@@ -1186,10 +1183,22 @@
 								<parameter name="widgetCustomSettings">1</parameter>
 								<parameter name="widgetCentrPivot">1</parameter>
 								<parameter name="widgetPosition">0.5 0.5</parameter>
+								<parameter name="widgetOffsetPosition">0 0</parameter>
 								<parameter name="widgetColor">1 1 1 0.784313798</parameter>
-								<parameter name="widgetText">•</parameter>
+								<parameter name="widgetText">+</parameter>
 								<parameter name="widgetTextSize">30</parameter>
 								<parameter name="widgetTextOutline">1</parameter>
+							</property>
+						</properties>
+						<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+					</node>
+					<node type="NodeDummy" id="496700532" name="Tooltip">
+						<properties>
+							<property parent="bbef67ab512af6de1f5d7d746af7491ff2ebdaed" guid="5368891d755f19e221c38d2e9ba4a6553ddcb02f">
+								<parameter name="widgetCustomSettings">1</parameter>
+								<parameter name="widgetPosition">0.550000012 0.5</parameter>
+								<parameter name="widgetColor">1 0 1 0.784313798</parameter>
+								<parameter name="interactionZone">60f325b14dec58f2c65124e14bc384a3f4f2b2e0</parameter>
 							</property>
 						</properties>
 						<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>

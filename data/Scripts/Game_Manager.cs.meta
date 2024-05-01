@@ -2,7 +2,7 @@
 <asset version="2.18.0.1">
 	<guid>d7cbac6e21a71eb9b99e3b7eb3084c9affebd349</guid>
 	<type>component</type>
-	<hash>62f8a3d4</hash>
+	<hash>e49605fd</hash>
 	<runtimes>
 		<runtime id="d7cbac6e21a71eb9b99e3b7eb3084c9affebd349" name="Game_Manager.cs" link="0"/>
 		<runtime id="57eba3dc6afedf451ddcf06c50374d05d7e748bf" name="Game_Manager.prop" link="1" type="4"/>

@@ -37,13 +37,14 @@ namespace RiboShock.Creator {
 			
 			widgetLabel.Arrange ();
 			widgetLabel.Hidden = !widgetActive;
-			gui.AddChild (widgetLabel, Gui.ALIGN_CENTER);
+			gui.AddChild (widgetLabel, Gui.ALIGN_EXPAND | Gui.ALIGN_OVERLAP);
 			//Позиция
-			vec2 _targetPos = new vec2 (gui.Width * widgetPosition.x + widgetOffsetPosition.x, gui.Height * widgetPosition.y + widgetOffsetPosition.y);
+			vec2 _targetPos = new vec2 (gui.Width * widgetPosition.x, gui.Height * widgetPosition.y);
+			_targetPos += widgetOffsetPosition;
 
 			if (widgetCentrPivot) {
-				_targetPos.x -= widgetLabel.Width;
-				_targetPos.y -= widgetLabel.Height;
+				_targetPos.x -= widgetLabel.Width / 2;
+				_targetPos.y -= widgetLabel.Height / 2;
 			}
 			
 			widgetLabel.SetPosition ((int) _targetPos.x, (int) _targetPos.y);

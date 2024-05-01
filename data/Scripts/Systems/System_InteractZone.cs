@@ -12,6 +12,8 @@ namespace RiboShock.Systems {
 		[ShowInEditor, Parameter (Title = "Физический триггер")]
 		private PhysicalTrigger physicalTrigger;
 
+		private System_Item currentItem;
+
 		public delegate void ChangeInteractionObject (string name, bool active);
 		public event ChangeInteractionObject OnChangeInteractionObject_Event;
 		
@@ -34,10 +36,8 @@ namespace RiboShock.Systems {
 		void EnteringBody (Body enteringBody) {
 			//Предметы
 			if (enteringBody.Object.GetComponent <System_Item> ()) {
-				System_Item _curItem = enteringBody.Object.GetComponent <System_Item> ();
-				OnChangeInteractionObject_Event?.Invoke (_curItem.GetItemName (), true);
-				
-				Log.MessageLine ("{0} ввошел в область", _curItem.GetItemName ());
+				currentItem = enteringBody.Object.GetComponent <System_Item> ();
+				OnChangeInteractionObject_Event?.Invoke (currentItem.GetItemName (), true);
 			}
 		}
 		
@@ -49,11 +49,8 @@ namespace RiboShock.Systems {
 		/// </param>
 		void LeavingBody (Body leavingBody) {
 			//Предметы
-			if (leavingBody.Object.GetComponent <System_Item> ()) {
-				System_Item _curItem = leavingBody.Object.GetComponent <System_Item> ();
-				OnChangeInteractionObject_Event?.Invoke (_curItem.GetItemName (), false);
-				
-				Log.MessageLine ("{0} вышел из области", _curItem.GetItemName ());
+			if (leavingBody.Object.GetComponent <System_Item> () && currentItem == leavingBody.Object.GetComponent <System_Item> ()) {
+				OnChangeInteractionObject_Event?.Invoke (currentItem.GetItemName (), false);
 			}
 		}
 	}
