@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.18.0.1">
+	<guid>a197e8c97f50ffd507970d4d7e0e8aedfec7ffd1</guid>
+	<type>component</type>
+	<hash>ccb502b4</hash>
+	<runtimes>
+		<runtime id="a197e8c97f50ffd507970d4d7e0e8aedfec7ffd1" name="Creator_BodyRigid.cs" link="0"/>
+	</runtimes>
+</asset>

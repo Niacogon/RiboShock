@@ -1,4 +1,5 @@
 using System;
+using RiboShock.Systems;
 using Unigine;
 
 /// <summary>
@@ -18,8 +19,12 @@ namespace RiboShock {
 		public static CustomKeyAssignment customKeyAssignment_Static { private set; get; }
 		
 		void Init () {
-			customKeyAssignment_Static = customKeyAssignment;
 			Unigine.Console.Onscreen = true;
+			//Настройка импута
+			customKeyAssignment_Static = customKeyAssignment;
+			
+			System_Inputs.SetMouseGrab (true);
+			System_Inputs.SetCustomInput (customKeyAssignment);
 		}
 		
 		void Shutdown () {

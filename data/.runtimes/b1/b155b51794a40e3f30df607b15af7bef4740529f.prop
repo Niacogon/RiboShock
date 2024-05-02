@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.18.0.1" name="Controller_Camera" guid="b155b51794a40e3f30df607b15af7bef4740529f" parent="657ecdbbfc83135a26777f86012da3587b67be0c" editable="0">
+	<parameter name="camera" type="node" title="Камера пустышка" filter="PlayerDummy"/>
+	<parameter name="cameraDistance" type="float" title="Дистанция камеры" group="Основные настройки">0</parameter>
+	<parameter name="elevationAngle" type="vec3" title="Угол возвышения" tooltip="x - минимальная, y - максимальная, z - стартовая" group="Основные настройки">-60 60 0</parameter>
+	<parameter name="initcurAzimuthAngle" type="float" title="Начальный азимутальный угол" group="Основные настройки" min="0" max="360">60</parameter>
+	<parameter name="turningSpeed" type="float" title="Скорость смещения угла" group="Основные настройки" min="0">0.200000003</parameter>
+	<parameter name="isFixedAngles" type="toggle" title="Фиксированные углы камеры" group="Дополнительные настройки">0</parameter>
+	<parameter name="targetsPoint" type="node"/>
+</property>
