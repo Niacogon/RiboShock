@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.18.0.1" name="Controller_Character" guid="c23743caa24e100f61a96976a363db0fbdcc058e" parent="657ecdbbfc83135a26777f86012da3587b67be0c" editable="0">
+	<struct name="Creator_BodyRigid">
+		<parameter name="physicalMass" type="float" title="Физическая масса" group="Масса физического тела">30</parameter>
+		<parameter name="velocity" type="vec3" title="Скорость" tooltip="x - шаг/ползти, y - бег, z - спринт)" group="Масса физического тела">1.5 3.4000001 5.80000019</parameter>
+		<parameter name="acceleration" type="float" title="Ускорение" group="Масса физического тела">8</parameter>
+		<parameter name="damping" type="float" title="Затухание" group="Масса физического тела">8</parameter>
+		<parameter name="physicalMask" type="mask" title="Физическая маска" group="Масса физического тела">1</parameter>
+		<parameter name="height" type="float" title="Высота" group="Сферический коллайдер">0.800000012</parameter>
+		<parameter name="radius" type="float" title="Радиус" group="Сферический коллайдер">0.5</parameter>
+		<parameter name="friction" type="vec2" title="Трение" tooltip="x - минимальное, y - максимальное" group="Сферический коллайдер">0.100000001 1</parameter>
+		<parameter name="collisionMask" type="mask" title="Маска колизии" group="Сферический коллайдер">1</parameter>
+		<parameter name="intersectionMask" type="mask" title="Маска пересечения" group="Сферический коллайдер">1</parameter>
+	</struct>
+	<parameter name="bodyRigid" type="Creator_BodyRigid" title="Создатель массы тела" group="Настройки персонажа"/>
+	<parameter name="targetDirection" type="node" title="Направление от цели" tooltip="К примеру камера или цель" group="Настройки персонажа"/>
+	<parameter name="lookAtDirection" type="toggle" title="Движение по направлению" group="Настройки персонажа">1</parameter>
+	<parameter name="jumping" type="float" title="Параметры прыжка" group="Настройки персонажа">1</parameter>
+	<parameter name="deadEffectReference" type="file" tooltip="Ссылка эффект смерти" group="Эффекты"/>
+</property>

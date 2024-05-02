@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.18.0.1" name="Creator_WidgetText" guid="57f1a9a97eee3e3ddc4a7387020fb9b4f905f29a" parent="19a98c3a54473992ed5bfbb41ba488c6910440a1" editable="0">
+	<parameter name="widgetText" type="string" title="Текст виджета"/>
+	<parameter name="widgetTextSize" type="int" title="Размер текста виджета">20</parameter>
+	<parameter name="widgetTextOutline" type="toggle" title="Обводка текста">0</parameter>
+	<parameter name="widgetActive" type="toggle" title="Виджет активен">1</parameter>
+</property>
