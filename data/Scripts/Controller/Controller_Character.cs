@@ -11,11 +11,15 @@ namespace RiboShock.Controller {
 	/// </summary>
 	[Component (PropertyGuid = "c23743caa24e100f61a96976a363db0fbdcc058e")]
 	public class Controller_Character : Component {
-		[Parameter (Group = "Настройки персонажа", Title = "Создатель массы тела")] public Creator_BodyRigid bodyRigid = new Creator_BodyRigid ();
+		[Parameter (Group = "Настройки персонажа", Title = "Создатель массы тела")]
+		public Creator_BodyRigid bodyRigid = new Creator_BodyRigid ();
 
-		[ShowInEditor, Parameter (Group = "Настройки персонажа", Title = "Направление от цели", Tooltip = "К примеру камера или цель")] Node targetDirection = null;
-		[ShowInEditor, Parameter (Group = "Настройки персонажа", Title = "Движение по направлению")] bool lookAtDirection = true;
-		[ShowInEditor, Parameter (Group = "Настройки персонажа", Title = "Параметры прыжка")] float jumping = 1f;
+		[ShowInEditor, Parameter (Group = "Настройки персонажа", Title = "Направление от цели", Tooltip = "К примеру камера или цель")]
+		Node targetDirection = null;
+		[ShowInEditor, Parameter (Group = "Настройки персонажа", Title = "Движение по направлению")]
+		bool lookAtDirection = true;
+		[ShowInEditor, Parameter (Group = "Настройки персонажа", Title = "Параметры прыжка")]
+		float jumping = 1.2f;
 		/// <summary>
 		///	Состояний поведения персонажа
 		/// </summary>
@@ -229,18 +233,18 @@ namespace RiboShock.Controller {
 			_z = MathLib.Normalize (MathLib.Cross (_x, _y));
 
 			//движение
-			if (ground == 1) {
+			//if (ground == 1) {
 				oldImpulsY = vec3.ZERO;
 
 				if (behaviorStates.states [(int) Controller_Character_BehaviorState.Behavior.Forward] > 0) {
 					_impulse += _y;
 					oldImpulsY = _y;
 				}
+				
 				if (behaviorStates.states [(int) Controller_Character_BehaviorState.Behavior.Backward] > 0) _impulse -= _y;
 				if (behaviorStates.states [(int) Controller_Character_BehaviorState.Behavior.Left] > 0) _impulse -= _x;
 				if (behaviorStates.states [(int) Controller_Character_BehaviorState.Behavior.Right] > 0) _impulse += _x;
-				
-			} else _impulse += oldImpulsY;
+			//} else _impulse += oldImpulsY;
 
 			if (_impulse.Length2 > 0) _impulse.Normalize ();
 

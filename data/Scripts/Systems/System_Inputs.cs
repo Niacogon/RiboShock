@@ -32,7 +32,9 @@ namespace RiboShock.Systems {
 			SetJumping ();
 
 			SetTabulation ();
+			SetInteraction ();
 			SetInventoryActive ();
+			SetSlot ();
 			//мышь
 			Input.MouseGrab = mouseGrab;
 			Input.MouseCursorHide = mouseGrab;
@@ -107,10 +109,7 @@ namespace RiboShock.Systems {
 		/// Установка прыжка
 		/// </summary>
 		static void SetJumping () {
-			jump = Input.IsKeyDown (customKeyAssignment.jumpKey) && moveAxis.z >= 1 &&
-			       moveAxis.x == 0 && moveAxis.y >= 0
-				? true
-				: false;
+			jump = Input.IsKeyDown (customKeyAssignment.jumpKey) ? true : false;
 			OnChangeJump_Event?.Invoke (jump);
 		}
 
@@ -132,6 +131,18 @@ namespace RiboShock.Systems {
 		}
 
 		/// <summary>
+		/// Взаимодействие
+		/// </summary>
+		public static Action onInteraction;
+		/// <summary>
+		/// Собюытие взаимодействия
+		/// </summary>
+		static void SetInteraction () {
+			if (Input.IsKeyDown (customKeyAssignment.interactionKey))
+				onInteraction?.Invoke ();
+		}
+		
+		/// <summary>
 		/// Инвентарь
 		/// </summary>
 		public static bool inventoryActive;// { private set; get; }
@@ -147,6 +158,20 @@ namespace RiboShock.Systems {
 			if (Input.IsKeyDown (customKeyAssignment.inventoryKey)) inventoryActive = inventoryActive ? false : true;
 			if (inventoryActive == mouseGrab) SetMouseGrab (!inventoryActive);
 			OnChangeInventoryActive_Event?.Invoke (inventoryActive);
+		}
+		
+		/// <summary>
+		/// Слоты
+		/// </summary>
+		public static Action <int> onSlot;
+		/// <summary>
+		/// Собюытие слотов
+		/// </summary>
+		static void SetSlot () {
+			for (int _s = 0; _s < customKeyAssignment.inventorySlots.Length; _s++) {
+				if (Input.IsKeyDown (customKeyAssignment.inventorySlots [_s]))
+					onSlot?.Invoke (_s);
+			}
 		}
 		#endregion
 
@@ -204,7 +229,7 @@ namespace RiboShock.Systems {
 		/// </summary>
 		static void SetMouseWheel () {
 			mouseWheel = Input.MouseWheel;
-			OnChangeMouseWheel_Event?.Invoke (mouseWheel);
+			if (mouseWheel != 0) OnChangeMouseWheel_Event?.Invoke (mouseWheel);
 		}
 		#endregion
 	}

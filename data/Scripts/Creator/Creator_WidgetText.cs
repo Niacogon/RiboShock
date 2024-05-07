@@ -24,7 +24,7 @@ namespace RiboShock.Creator {
 
 		[Parameter (Title = "Виджет активен")]
 		public bool widgetActive = true;
-		
+
 		/// <summary>
 		/// Создание виджета
 		/// </summary>
@@ -38,7 +38,14 @@ namespace RiboShock.Creator {
 			widgetLabel.Arrange ();
 			widgetLabel.Hidden = !widgetActive;
 			gui.AddChild (widgetLabel, Gui.ALIGN_EXPAND | Gui.ALIGN_OVERLAP);
-			//Позиция
+		}
+
+		/// <summary>
+		/// Обновление позиции
+		/// </summary>
+		public override void UpdatePosition () {
+			if (widgetLabel == null) return;
+			
 			vec2 _targetPos = new vec2 (gui.Width * widgetPosition.x, gui.Height * widgetPosition.y);
 			_targetPos += widgetOffsetPosition;
 

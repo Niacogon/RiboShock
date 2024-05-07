@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <nodes version="2.18.0.1">
-	<node type="NodeDummy" id="1580136476" name="aero">
+	<node type="NodeDummy" id="1608228235" name="aero">
 		<transform>1 2.646978e-22 -3.8213714e-15 0.0 9.2644229e-23 1 8.7422777e-08 0.0 3.8213714e-15 -8.7422777e-08 1 0.0 0 0 0 1.0</transform>
-		<node type="ObjectMeshStatic" id="1986573515" immovable="1" name="aero">
+		<node type="ObjectMeshStatic" id="2112771438" immovable="1" name="aero">
 			<streaming_mode_vram>0</streaming_mode_vram>
 			<streaming_mode_ram>0</streaming_mode_ram>
 			<mesh_name>guid://307618c9a9b9b4ab53229f2a00f14ff03ffb4446</mesh_name>

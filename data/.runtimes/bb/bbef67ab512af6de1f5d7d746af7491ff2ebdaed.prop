@@ -2,6 +2,10 @@
 <property version="2.18.0.1" name="Creator_Tooltip" guid="bbef67ab512af6de1f5d7d746af7491ff2ebdaed" parent="19a98c3a54473992ed5bfbb41ba488c6910440a1" editable="0">
 	<struct name="System_InteractZone">
 		<parameter name="physicalTrigger" type="node" title="Физический триггер" filter="PhysicalTrigger"/>
+		<parameter name="inventory" type="property" title="Инвентарь" filter="92699568127d9246cff330608d843f09990b8949" flags="internal"/>
+	</struct>
+	<struct name="Controller_Inventory">
+		<parameter name="parentItems" type="node" title="Хранилище предметов"/>
 	</struct>
 	<parameter name="interactionZone" type="property" title="Триггер взаимодействия" group="Панель взаимодействия" filter="7afcd4924f248e54ece8a8a2d8c94fa4a77913dd" flags="internal"/>
 	<parameter name="interactionNameSize" type="int" title="Размер имени объекта" group="Панель взаимодействия">25</parameter>

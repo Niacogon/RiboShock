@@ -2,7 +2,7 @@
 <asset version="2.18.0.1">
 	<guid>4dbc0d0363ebceee0ff23e110f2c8ca9b71ca8dc</guid>
 	<type>component</type>
-	<hash>290335d6</hash>
+	<hash>f71eda98</hash>
 	<runtimes>
 		<runtime id="4dbc0d0363ebceee0ff23e110f2c8ca9b71ca8dc" name="Creator_WidgetText.cs" link="0"/>
 		<runtime id="57f1a9a97eee3e3ddc4a7387020fb9b4f905f29a" name="Creator_WidgetText.prop" link="1" type="4"/>

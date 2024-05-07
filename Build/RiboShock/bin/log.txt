@@ -1,0 +1,145 @@
+21:25:44 System info initialization (Time: 109.6ms, Memory: 0B)
+21:25:44 
+21:25:44 ---- Engine ----
+21:25:44 Version: 2.18.0.1 ver-2.18.0.0-bf5143a Feb  6 2024
+21:25:44 Binary: Windows 64-bit Visual C++ 1900 Release
+21:25:44 Engine features: Direct3D11 Direct3D12 Vulkan OpenAL VR OpenVR Varjo Microprofile FloatCoords HalfTexCoords Development
+21:25:44 Third-Party Notices: https://developer.unigine.com/docs/2.18/third_party
+21:25:44 
+21:25:44 
+21:25:44 ---- Configs ----
+21:25:44 Loading boot config "H:/RiboShock (for git)/Build/RiboShock/data/configs/default.boot"...
+21:25:44 Loading user config "H:/RiboShock (for git)/Build/RiboShock/data/configs/default.user"...
+21:25:44 Using config file "configs/default.config"
+21:25:44 Using boot config file "configs/default.boot"
+21:25:44 Using user config file "configs/default.user"
+21:25:44 Using controls config file "configs/default.controls"
+21:25:44 
+21:25:44 ---- Engine Microprofile ----
+21:25:44 Microprofile initialization (Time: 0.9ms, Memory: 1.5KB)
+21:25:44 MicroProfile: Web server started on port 1338
+21:25:44 
+21:25:44 ---- GPU Detection ----
+21:25:44 GPU 0: NVIDIA GeForce GTX 1650 3948 MB (Active)
+21:25:44 GPU 1: Microsoft Basic Render Driver 16347 MB
+21:25:44 
+21:25:44 ---- System ----
+21:25:44 OS:		Windows 10 (build 19045) 64-bit
+21:25:44 
+21:25:44 CPU:	Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+21:25:44 		Frequency: 2599MHz
+21:25:44 		Extensions:  MMX SSE SSE2 SSE3 SSSE3 SSE41 SSE42 AVX HTT
+21:25:44 		Cores:8 Threads:16
+21:25:44 
+21:25:44 		System memory: 32694 MB
+21:25:44 		CPUShaders threads: 16
+21:25:44 
+21:25:44 GPU:	NVIDIA GeForce GTX 1650
+21:25:44 		Video memory:  3948 MB
+21:25:44 
+21:25:44 
+21:25:44 ---- Application ----
+21:25:44 
+21:25:44 ---- System Proxy ----
+21:25:44 SystemProxy initialization (Time: 119.4ms, Memory: 17.0KB)
+21:25:44 
+21:25:44 ---- VR ----
+21:25:44 VR initialization (Time: 0.1ms, Memory: 592B)
+21:25:44 
+21:25:44 
+21:25:44 ---- Render ----
+21:25:44 Loading "dxgi.dll"...
+21:25:44 Direct3D 11 initialization
+21:25:44 Renderer: NVidia 3948MB
+21:25:44 Renderer API: Direct3D 11.0
+21:25:44 Maximum texture size: 16384
+21:25:44 Maximum texture units: 16
+21:25:44 Render initialization (Time: 497.6ms, Memory: 18.8MB)
+21:25:44 
+21:25:44 
+21:25:44 ---- VR Subsystems ----
+21:25:44 VR Subsystems initialization (Time: 0.1ms, Memory: 2.2KB)
+21:25:44 
+21:25:44 
+21:25:44 ---- Filesystem ----
+21:25:45 App path:  H:/RiboShock (for git)/Build/RiboShock/bin/
+21:25:45 Data path: H:/RiboShock (for git)/Build/RiboShock/data/
+21:25:45 Save path: H:/RiboShock (for git)/Build/RiboShock/bin/
+21:25:45 
+21:25:45 Runtimes loaded: 65 (Time: 7.6ms, Memory: 706.4KB)
+21:25:45 Filesystem initialization (Time: 161.8ms, Memory: 8.1MB)
+21:25:45 
+21:25:45 
+21:25:45 ---- Sound ----
+21:25:45 Loading "openal32.dll"...
+21:25:45 Renderer: OpenAL Soft on CABLE Input (VB-Audio Virtual Cable)
+21:25:45 OpenAL vendor: OpenAL Community
+21:25:45 OpenAL renderer: OpenAL Soft
+21:25:45 OpenAL version: 1.1 ALSOFT 1.22.2
+21:25:45 Found AL_EXT_LINEAR_DISTANCE
+21:25:45 Found AL_EXT_OFFSET
+21:25:45 Found ALC_EXT_EFX
+21:25:45 Found ALC_SOFT_HRTF
+21:25:45 Found EFX Filter
+21:25:45 Found EFX Reverb
+21:25:45 Found EAX Reverb
+21:25:45 Found QUAD16 format
+21:25:45 Found 51CHN16 format
+21:25:45 Found 61CHN16 format
+21:25:45 Found 71CHN16 format
+21:25:45 Device enumeration supported
+21:25:45 Maximum sources: 256
+21:25:45 Maximum effect slots: 16
+21:25:45 Maximum auxiliary sends: 2
+21:25:45 Output sampling frequency: 48000hz
+21:25:45 HRTF not enabled!
+21:25:45 
+21:25:45 Sound: openal
+21:25:45 Sound initialization (Time: 43.0ms, Memory: 11.0KB)
+21:25:45 
+21:25:45 ---- Physics ----
+21:25:45 
+21:25:45 ---- PathFind ----
+21:25:45 
+21:25:45 Loading controls "H:/RiboShock (for git)/Build/RiboShock/data/configs/default.controls"...
+21:25:45 Loading config "H:/RiboShock (for git)/Build/RiboShock/data/configs/default.config"...
+21:25:45 D3D11Particles::createBuffers (Time: 70.8ms, Memory: 16.9KB)
+21:25:45 
+21:25:45 ---- Materials ----
+21:25:45 Load Abstract Materials (Time: 2.5ms, Memory: 962.0KB)
+21:25:45 Base materials loaded: 173/173 (Time: 262.3ms, Memory: 6.4MB)
+21:25:45 Materials loaded: 75/75 (Time: 23.2ms, Memory: 609.6KB)
+21:25:45 Total materials: 248
+21:25:45 
+21:25:45 Load Materials (Time: 285.8ms, Memory: 6.9MB)
+21:25:45 
+21:25:45 ---- Properties ----
+21:25:45 Properties loaded: 15/15 (Time: 13.2ms, Memory: 613.1KB)
+21:25:45 
+21:25:45 
+21:25:45 ---- Animations ----
+21:25:45 Total objects: 0
+21:25:45 Total tracks: 0
+21:25:45 Total playbacks: 0
+21:25:45 Load Animations (Time: 0.7ms, Memory: 256.5KB)
+21:25:45 
+21:25:45 ---- MeshStaticManager ----
+21:25:45 Initialization meshes (Time: 6.1ms, Memory: 129.8KB)
+21:25:45 Total resources: 20
+21:25:45 
+21:25:46 Engine initialization (Time: 2.4s, Memory: 171.3MB)
+21:25:46 
+21:25:46 
+21:25:46 ---- Plugins ----
+21:25:46 Plugins path: "H:/RiboShock (for git)/Build/RiboShock/bin/plugins"
+21:25:46 Plugins initialization (Time: 0.2ms, Memory: 3.5KB)
+21:25:46 
+21:25:46 ---- Interpreter ----
+21:25:46 Version: 2.90
+21:25:46 
+21:25:46 Unigine~# world_load "DevRoom"
+21:25:46 ERROR:	Interpreter::restore_state(): different number of libraries
+21:25:46 Script loading "core/unigine.usc" 17ms
+21:25:47 World loading "DevRoom.world" (Time: 59.2ms, Memory: 501.3KB)
+21:25:58 Close "openal32.dll"
+21:25:58 Fast shutdown 12.3ms

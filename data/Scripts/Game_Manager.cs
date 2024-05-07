@@ -63,7 +63,12 @@ namespace RiboShock {
 		public Input.KEY interactionKey = Input.KEY.F;
 		[Parameter (Group = "Клавиатура", Title = "Инвентарь")]
 		public Input.KEY inventoryKey = Input.KEY.I;
-
+		[Parameter (Group = "Клавиатура", Title = "Ячейки")]
+		public Input.KEY [] inventorySlots = new [] {
+			Input.KEY.ANY_DIGIT_1,
+			Input.KEY.ANY_DIGIT_2
+		};
+		
 		//Мышь
 		[Parameter (Group = "Мышь", Title = "Атака/Огонь")]
 		public Input.MOUSE_BUTTON mouseFireKey = Input.MOUSE_BUTTON.LEFT;

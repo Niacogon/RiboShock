@@ -1,4 +1,5 @@
 using Unigine;
+using RiboShock.Controller;
 
 /// <summary>
 /// Раздел систем
@@ -12,19 +13,33 @@ namespace RiboShock.Systems {
 		[ShowInEditor, Parameter (Title = "Физический триггер")]
 		private PhysicalTrigger physicalTrigger;
 
+		/// <summary>
+		/// Можно взаимодествовать
+		/// </summary>
+		private bool canActive = false;
+		/// <summary>
+		/// Текущий предмет
+		/// </summary>
 		private System_Item currentItem;
 
 		public delegate void ChangeInteractionObject (string name, bool active);
 		public event ChangeInteractionObject OnChangeInteractionObject_Event;
 		
+		[Parameter (Title = "Инвентарь")]
+		public Controller_Inventory inventory;
+		
 		void Init () {
 			physicalTrigger.EventEnter.Connect (EnteringBody);
 			physicalTrigger.EventLeave.Connect (LeavingBody);
+
+			System_Inputs.onInteraction += InteractionItem;
 		}
 		
 		void Shutdown () {
 			physicalTrigger.EventEnter.Disconnect (EnteringBody);
 			physicalTrigger.EventLeave.Disconnect (LeavingBody);
+			
+			System_Inputs.onInteraction -= InteractionItem;
 		}
 		
 		/// <summary>
@@ -36,8 +51,9 @@ namespace RiboShock.Systems {
 		void EnteringBody (Body enteringBody) {
 			//Предметы
 			if (enteringBody.Object.GetComponent <System_Item> ()) {
+				canActive = true;
 				currentItem = enteringBody.Object.GetComponent <System_Item> ();
-				OnChangeInteractionObject_Event?.Invoke (currentItem.GetItemName (), true);
+				OnChangeInteractionObject_Event?.Invoke (currentItem.GetItemName (), canActive);
 			}
 		}
 		
@@ -50,8 +66,20 @@ namespace RiboShock.Systems {
 		void LeavingBody (Body leavingBody) {
 			//Предметы
 			if (leavingBody.Object.GetComponent <System_Item> () && currentItem == leavingBody.Object.GetComponent <System_Item> ()) {
-				OnChangeInteractionObject_Event?.Invoke (currentItem.GetItemName (), false);
+				canActive = false;
+				OnChangeInteractionObject_Event?.Invoke (currentItem.GetItemName (), canActive);
 			}
+		}
+
+		/// <summary>
+		/// Взаимодействие с предметом
+		/// </summary>
+		void InteractionItem () {
+			if (!canActive) return;
+			
+			canActive = false;
+			inventory.AddItem (currentItem);
+			OnChangeInteractionObject_Event?.Invoke (currentItem.GetItemName (), canActive);
 		}
 	}
 }

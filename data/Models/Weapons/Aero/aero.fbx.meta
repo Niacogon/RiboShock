@@ -2,7 +2,7 @@
 <asset version="2.18.0.1">
 	<guid>ab191d7fe8d845236ef59f3898bbb7266aa0baf4</guid>
 	<type>fbx</type>
-	<hash>dbb66d14</hash>
+	<hash>01052afd</hash>
 	<runtimes>
 		<runtime id="ab191d7fe8d845236ef59f3898bbb7266aa0baf4" name="aero.fbx" link="0"/>
 		<runtime id="9e294e274ad6fb3e5f5eb1a2219a9a58f2e9a9c3" name="aero.node" link="1" type="3">
@@ -12,7 +12,7 @@
 		</runtime>
 		<runtime id="307618c9a9b9b4ab53229f2a00f14ff03ffb4446" name="aero.mesh" link="2" type="1">
 			<parameters>
-				<parameter type="string" name="id">9118e225</parameter>
+				<parameter type="string" name="id">e29ba174</parameter>
 			</parameters>
 		</runtime>
 	</runtimes>

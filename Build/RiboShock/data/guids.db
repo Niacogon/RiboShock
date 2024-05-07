@@ -71,6 +71,7 @@
     "9fe8b69de957c75886e922d76126624a0fc56d21": "csharp_template/props/constructor/textures/floor_green_alb.png",
     "a428fd98ab66641782c2328a2fe88061d7dd1e4c": "csharp_template/props/material_ball/textures/material_ball_a.png",
     "a4ef055b5e977afe67ef6645e313a2e07f3378bf": "csharp_template/props/material_ball/textures/material_ball_alb.png",
+    "a9dc20da7fec0442866254927688a84f0c3c0663": "Scripts/Controller/Controller_Inventory.cs",
     "aa480c17309a5a3ef84a1e147ac713a71e4727c1": "csharp_template/props/primitives/textures/cone_n.png",
     "aabd101dcf4952d811423857ffbd79ca9c4e9ea1": "bake_lighting/lightmaps/aabd101dcf4952d811423857ffbd79ca9c4e9ea1.texture",
     "ab191d7fe8d845236ef59f3898bbb7266aa0baf4": "Models/Weapons/Aero/aero.fbx",

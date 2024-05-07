@@ -15,7 +15,7 @@ namespace RiboShock.Controller {
 		[ShowInEditor, Parameter (Group = "Основные настройки", Title = "Дистанция камеры")]
 		float cameraDistance = 0;
 		[ShowInEditor, Parameter (Group = "Основные настройки", Title = "Угол возвышения", Tooltip = "x - минимальная, y - максимальная, z - стартовая")]
-		vec3 elevationAngle = new vec3 (-60, 60f, 0);
+		vec3 elevationAngle = new vec3 (-89.9f, 89.9f, 0);
 		[ShowInEditor, ParameterSlider (Group = "Основные настройки", Min = 0.0f, Max = 360.0f, Title = "Начальный азимутальный угол")]
 		float initcurAzimuthAngle = 60.0f;
 		[ShowInEditor, ParameterSlider (Group = "Основные настройки", Min = 0.0f, Title = "Скорость смещения угла")]

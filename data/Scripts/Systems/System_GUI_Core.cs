@@ -14,6 +14,10 @@ namespace RiboShock.Systems {
 		/// </summary>
 		public Gui gui { private set; get; } = Gui.GetCurrent ();
 		/// <summary>
+		/// Старое разрешение
+		/// </summary>
+		vec2 oldResolution = vec2.ONE;
+		/// <summary>
 		/// Основной холст
 		/// </summary>
 		public WidgetCanvas mainCanvas { private set; get; }
@@ -48,9 +52,22 @@ namespace RiboShock.Systems {
 			WidgetInit ();
 		}
 
+		void Update () {
+			if (gui.Width != oldResolution.x || gui.Height != oldResolution.y) {
+				oldResolution.x = gui.Width;
+				oldResolution.y = gui.Height;
+
+				UpdatePosition ();
+			}
+		}
+
 		/// <summary>
 		/// Создание виджета
 		/// </summary>
 		public virtual void WidgetInit () {}
+		/// <summary>
+		/// Обновление позиции
+		/// </summary>
+		public virtual void UpdatePosition () {}
 	}
 }

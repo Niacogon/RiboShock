@@ -2,7 +2,7 @@
 <settings>
 	<launch>
 		<video_api>0</video_api>
-		<resolution>1920 1080</resolution>
+		<resolution>800 600</resolution>
 		<fullscreen>0</fullscreen>
 		<vr_mode>0</vr_mode>
 		<verbosity>0</verbosity>

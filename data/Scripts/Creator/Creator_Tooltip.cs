@@ -63,6 +63,23 @@ namespace RiboShock.Creator {
 		}
 		
 		/// <summary>
+		/// Обновление позиции
+		/// </summary>
+		public override void UpdatePosition () {
+			if (interactionPanel == null) return;
+			
+			vec2 _targetPos = new vec2 (gui.Width * widgetPosition.x, gui.Height * widgetPosition.y);
+			_targetPos += widgetOffsetPosition;
+
+			if (widgetCentrPivot) {
+				_targetPos.x -= interactionPanel.Width / 2;
+				_targetPos.y -= interactionPanel.Height / 2;
+			}
+			
+			interactionPanel.SetPosition ((int) _targetPos.x, (int) _targetPos.y);
+		}
+		
+		/// <summary>
 		/// Изменить текст взаимодействия
 		/// </summary>
 		/// <param name="nameObject">
@@ -77,16 +94,8 @@ namespace RiboShock.Creator {
 			
 			interactionPanel.Arrange ();
 			interactionPanel.Hidden = !active;
-			//Обновление позиции
-			vec2 _targetPos = new vec2 (gui.Width * widgetPosition.x, gui.Height * widgetPosition.y);
-			_targetPos += widgetOffsetPosition;
 
-			if (widgetCentrPivot) {
-				_targetPos.x -= interactionPanel.Width / 2;
-				_targetPos.y -= interactionPanel.Height / 2;
-			}
-			
-			interactionPanel.SetPosition ((int) _targetPos.x, (int) _targetPos.y);
+			UpdatePosition ();
 		}
 	}
 }

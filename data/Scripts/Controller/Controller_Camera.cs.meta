@@ -2,7 +2,7 @@
 <asset version="2.18.0.1">
 	<guid>c1ef3a21ce2e5aa853f15c25eb97a0c9ca3fd829</guid>
 	<type>component</type>
-	<hash>8221047</hash>
+	<hash>a94f0a67</hash>
 	<runtimes>
 		<runtime id="c1ef3a21ce2e5aa853f15c25eb97a0c9ca3fd829" name="Controller_Camera.cs" link="0"/>
 		<runtime id="b155b51794a40e3f30df607b15af7bef4740529f" name="Controller_Camera.prop" link="1" type="4"/>

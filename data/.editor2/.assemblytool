@@ -9,6 +9,7 @@
     "main_release": "D:/Unigine Projects/RiboShock/bin/RiboShock_x64.exe",
     "name": "RiboShock",
     "os": "Windows",
+    "path": "C:/Users/N7 Molot/Desktop/RiboShock (Test build)/",
     "precision": "Float",
     "precompile": true,
     "resolutions": [
@@ -99,5 +100,5 @@
             "source": true
         }
     ],
-    "world": "60586bbbe11bedde064e7ba5e6cbf8c084a7151f"
+    "world": "7b6c2eeae03755c8c65cbca56264af5140d333be"
 }
