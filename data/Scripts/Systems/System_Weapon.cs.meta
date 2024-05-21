@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.18.0.1">
+	<guid>ec36079544cb516f07b15c7b146a25a30182538f</guid>
+	<type>component</type>
+	<hash>c65af92</hash>
+	<runtimes>
+		<runtime id="ec36079544cb516f07b15c7b146a25a30182538f" name="System_Weapon.cs" link="0"/>
+		<runtime id="a1a26a6b3e63b742fd5d7a614f237c071f8bdc95" name="System_Weapon.prop" link="1" type="4"/>
+	</runtimes>
+</asset>

@@ -40,6 +40,8 @@ namespace RiboShock.Systems {
 			Input.MouseCursorHide = mouseGrab;
 			
 			SetMouseAxis ();
+			SetMouseFire ();
+			SetMouseAim ();
 			SetMouseWheel ();
 		}
 
@@ -214,6 +216,35 @@ namespace RiboShock.Systems {
 
 			OnChangeMouseAxis_Event?.Invoke (mouseAxis);
 		}
+
+		/// <summary>
+		/// Событие атаки
+		/// </summary>
+		public static Action mouseFire;
+		/// <summary>
+		/// Установка события атаки
+		/// </summary>
+		static void SetMouseFire () {
+			if (mouseGrab && Input.IsMouseButtonDown (customKeyAssignment.mouseFire)) 
+				mouseFire.Invoke ();
+		}
+
+		/// <summary>
+		/// Событие прицеливания
+		/// </summary>
+		public static Action mouseAim;
+		/// <summary>
+		/// Установка события прицеливания
+		/// </summary>
+		static void SetMouseAim () {
+			if (mouseGrab && Input.IsMouseButtonDown (customKeyAssignment.mouseAim)) 
+				mouseAim.Invoke ();
+		}
+
+		/// <summary>
+		/// Активна ли оружние (для блокировки смены оружия через колесико мыши)
+		/// </summary>
+		public static bool weaponActive = false;
 
 		/// <summary>
 		/// Значение колёсика мыши

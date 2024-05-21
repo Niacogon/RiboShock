@@ -71,6 +71,8 @@ namespace RiboShock {
 		
 		//Мышь
 		[Parameter (Group = "Мышь", Title = "Атака/Огонь")]
-		public Input.MOUSE_BUTTON mouseFireKey = Input.MOUSE_BUTTON.LEFT;
+		public Input.MOUSE_BUTTON mouseFire = Input.MOUSE_BUTTON.LEFT;
+		[Parameter (Group = "Мышь", Title = "Прицеливание")]
+		public Input.MOUSE_BUTTON mouseAim = Input.MOUSE_BUTTON.RIGHT;
 	}
 }

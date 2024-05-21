@@ -16,7 +16,8 @@
 			<value>121</value>
 			<value>122</value>
 		</parameter>
-		<parameter name="mouseFireKey" type="switch" title="Атака/Огонь" group="Мышь" items="UNKNOWN,LEFT,MIDDLE,RIGHT,DCLICK,AUX_0,AUX_1,AUX_2,AUX_3,MOUSE_NUM_BUTTONS">1</parameter>
+		<parameter name="mouseFire" type="switch" title="Атака/Огонь" group="Мышь" items="UNKNOWN,LEFT,MIDDLE,RIGHT,DCLICK,AUX_0,AUX_1,AUX_2,AUX_3,MOUSE_NUM_BUTTONS">1</parameter>
+		<parameter name="mouseAim" type="switch" title="Прицеливание" group="Мышь" items="UNKNOWN,LEFT,MIDDLE,RIGHT,DCLICK,AUX_0,AUX_1,AUX_2,AUX_3,MOUSE_NUM_BUTTONS">3</parameter>
 	</struct>
 	<parameter name="customKeyAssignment" type="CustomKeyAssignment" title="Настройки ввода" tooltip="Кастомные настройки ввода"/>
 </property>

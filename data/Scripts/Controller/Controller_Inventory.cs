@@ -122,6 +122,8 @@ namespace RiboShock.Controller {
 		/// Следующее значение
 		/// </param>
 		void SelectWeapon_Wheel (int value) {
+			if (System_Inputs.weaponActive) return;
+			
 			weaponSelect -= value;
 			weaponSelect = MathLib.Clamp (weaponSelect, 0, 1);
 			
