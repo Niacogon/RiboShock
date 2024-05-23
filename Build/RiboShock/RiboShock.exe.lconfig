@@ -203,7 +203,7 @@
                     ],
                     "label": "Resolution",
                     "type": "Choice",
-                    "value": 5
+                    "value": 0
                 },
                 {
                     "items": [

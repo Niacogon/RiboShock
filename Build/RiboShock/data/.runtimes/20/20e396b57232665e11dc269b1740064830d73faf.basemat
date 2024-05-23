@@ -14,6 +14,7 @@ Group "Parameters"
 Color "color"=[1.000000 1.000000 1.000000 1.000000] < shader_name="var_1b2ff29707814fb176c5f0973c8656288073e88b">
 Slider "roughness"=0.000000 < min=0 max=1 shader_name="var_4b93d8479cb2d112283ef34d1b437d234adde333">
 Color "emision_color"=[1.000000 1.000000 1.000000 1.000000] < shader_name="var_4cdac0153caa090faae54c62fa3890ae41d1e7f2">
+Slider "opacity"=1.000000 < min=0 max=1 shader_name="var_7f11a0a1fc3b3fa4f5d8db1186dcd9b8f746ff47">
 }
 	State emission = true
 	State use_bound_scale = false
@@ -46,6 +47,11 @@ Color "emision_color"=[1.000000 1.000000 1.000000 1.000000] < shader_name="var_4
 			void _dot_product_call_graph_wrapper(float3 in0,float3 in1,out float out0)
 			{
 				out0 = _dot_product(in0,in1);
+			
+			}
+			void _multiply_call_graph_wrapper(float in0,float in1,out float out0)
+			{
+				out0 = _multiply(in0,in1);
 			
 			}
 			void _subtract_call_graph_wrapper(float in0,float in1,out float out0)
@@ -303,10 +309,11 @@ Color "emision_color"=[1.000000 1.000000 1.000000 1.000000] < shader_name="var_4
 			float auxiliary_clip_threshold = 0.5f;
 		#endif
 		
-		float3 var_12 = float3_zero;
+		float3 var_13 = float3_zero;
+		float var_12 = float_zero;
 		float var_11 = float_zero;
-		float var_10 = float_zero;
-		float3 var_9 = float3_zero;
+		float3 var_10 = float3_zero;
+		float var_9 = float_zero;
 		float var_8 = float_zero;
 		float var_7 = float_zero;
 		float var_6 = float_zero;
@@ -326,25 +333,26 @@ Color "emision_color"=[1.000000 1.000000 1.000000 1.000000] < shader_name="var_4
 		_subtract_call_graph_wrapper(1.000000f,var_4,var_5);
 		pow_call_graph_wrapper(var_5,var_2,var_6);
 		lerp_call_graph_wrapper(0.050000f,1.000000f,var_6,var_7);
-		var_8 = var_7;
+		_multiply_call_graph_wrapper(var_7,var_7f11a0a1fc3b3fa4f5d8db1186dcd9b8f746ff47,var_8);
+		var_9 = var_8;
 		
-		var_9 = toFloat3(var_1b2ff29707814fb176c5f0973c8656288073e88b);
+		var_10 = toFloat3(var_1b2ff29707814fb176c5f0973c8656288073e88b);
 		
-		var_10 = 1.000000f;
+		var_11 = 1.000000f;
 		
-		var_11 = var_4b93d8479cb2d112283ef34d1b437d234adde333;
+		var_12 = var_4b93d8479cb2d112283ef34d1b437d234adde333;
 		
-		var_12 = toFloat3(var_4cdac0153caa090faae54c62fa3890ae41d1e7f2);
+		var_13 = toFloat3(var_4cdac0153caa090faae54c62fa3890ae41d1e7f2);
 		
-		OUT_FRAG_OPACITY = var_8;
+		OUT_FRAG_OPACITY = var_9;
 		
-		OUT_FRAG_ALBEDO = var_9;
+		OUT_FRAG_ALBEDO = var_10;
 		
-		OUT_FRAG_METALNESS = var_10;
+		OUT_FRAG_METALNESS = var_11;
 		
-		OUT_FRAG_ROUGHNESS = var_11;
+		OUT_FRAG_ROUGHNESS = var_12;
 		
-		OUT_FRAG_EMISSION = var_12;
+		OUT_FRAG_EMISSION = var_13;
 		
 		
 		

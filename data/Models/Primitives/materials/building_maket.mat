@@ -7,4 +7,5 @@
 	<state name="lighting">0</state>
 	<parameter name="color" expression="0">0 1 0 1</parameter>
 	<parameter name="emision_color" expression="0">0 1 0 1</parameter>
+	<parameter name="opacity" expression="0">0.5</parameter>
 </material>

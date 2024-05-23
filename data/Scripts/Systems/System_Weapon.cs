@@ -31,7 +31,10 @@ namespace RiboShock.Systems {
 		
 		void Init () {
 			System_Inputs.mouseFire += WeaponFire;
-			System_Inputs.mouseAim += WeaponAim;
+
+			if (weaponType != 0) System_Inputs.mouseAim += WeaponAim;
+			else WeaponFire ();
+
 			System_Inputs.onDestroy += WeaponBuilder_Destroy;
 			System_Inputs.OnChangeMouseWheel_Event += WeaponBuilder_Rotation;
 			//Строитель
@@ -39,15 +42,14 @@ namespace RiboShock.Systems {
 		}
 
 		void Update () {
-			//Строитель
-			if (weaponType == 0 && weaponBuilder_ObjectMaket != null && weaponBuilder_ObjectMaket.Enabled) {
-				WeaponBuilder_SetTransform ();
-			}
+			WeaponBuilder_SetTransform ();
 		}
 		
 		void Shutdown () {
 			System_Inputs.mouseFire -= WeaponFire;
-			System_Inputs.mouseAim -= WeaponAim;
+			
+			if (weaponType != 0) System_Inputs.mouseAim -= WeaponAim;
+			
 			System_Inputs.onDestroy -= WeaponBuilder_Destroy;
 			System_Inputs.OnChangeMouseWheel_Event -= WeaponBuilder_Rotation;
 		}
@@ -57,22 +59,14 @@ namespace RiboShock.Systems {
 		/// </summary>
 		void WeaponFire () {
 			//Строитель
-			if (weaponType == 0 && weaponBuilder_ObjectMaket != null) {
-				if (!System_Inputs.weaponActive) {
-					//Начало строительства
-					System_Inputs.weaponActive = true;
-
-					weaponBuilder_ObjectMaket.Parent = null;
-					weaponBuilder_ObjectMaket.Enabled = true;
-				} else {
+			if (weaponType == 0 && System_Inputs.weaponActive) {
+				if (weaponBuilder_ObjectMaket != null) {
 					//Строительство
 					Node _newObject = weaponBuilder_Object.Clone ();
 					_newObject.Parent = null;
 					_newObject.WorldPosition = weaponBuilder_ObjectMaket.WorldPosition;
 					_newObject.SetWorldRotation (weaponBuilder_ObjectMaket.GetWorldRotation ());
 					_newObject.Enabled = true;
-
-					WeaponAim ();
 				}
 			}
 		}
@@ -83,10 +77,25 @@ namespace RiboShock.Systems {
 		void WeaponAim () {
 			//Строитель
 			if (weaponType == 0 && weaponBuilder_ObjectMaket != null) {
-				System_Inputs.weaponActive = false;
+				/*System_Inputs.weaponActive = false;
 				
 				weaponBuilder_ObjectMaket.Parent = node;
-				weaponBuilder_ObjectMaket.Enabled = false;
+				weaponBuilder_ObjectMaket.Enabled = false;*/
+			}
+		}
+		
+		/// <summary>
+		/// Активация строителя
+		/// </summary>
+		/// <param name="active">
+		/// Активен?
+		/// </param>
+		public void WeaponBuilder_Active (bool active) {
+			if (weaponType == 0 && weaponBuilder_ObjectMaket != null) {
+				System_Inputs.weaponActive = active;
+
+				weaponBuilder_ObjectMaket.Parent = active ? null : node;
+				weaponBuilder_ObjectMaket.Enabled = active;
 			}
 		}
 
@@ -94,6 +103,9 @@ namespace RiboShock.Systems {
 		/// Установка объекта для строительства
 		/// </summary>
 		void WeaponBuilder_SetTransform () {
+			if (!System_Inputs.weaponActive || weaponType != 0 || weaponBuilder_ObjectMaket == null) return;
+			
+			weaponBuilder_ObjectMaket.Enabled = true;
 			//Позиция
 			vec3 _newPosition = node.WorldPosition + (node.WorldTransform.GetColumn3 (1) * weaponBuilder_Offset);
 			weaponBuilder_ObjectMaket.WorldPosition = _newPosition;

@@ -67,8 +67,7 @@ namespace RiboShock.Controller {
 			if (newItem.GetTypeItem () == 1) weaponSecond = newItem;
 			//Выбор подоброного оружия
 			if (weaponSelect == -1) {
-				weaponSelect = newItem.GetTypeItem ();
-				ActiveWeapon ();
+				System_Inputs.onSlot?.Invoke (newItem.GetTypeItem ());
 			}
 		}
 		
@@ -145,9 +144,9 @@ namespace RiboShock.Controller {
 				
 				weaponFirst.node.Enabled = true;
 				weaponFirst.objectWeapon.Enabled = true;
-			} else if (weaponSecond == null) weaponSelect = -1;
+			}
 			//Второе оружия
-			if (weaponSelect == 1 && weaponSecond != null) {
+			else if (weaponSelect == 1 && weaponSecond != null) {
 				if (weaponFirst != null) {
 					weaponFirst.node.Enabled = false;
 					weaponFirst.objectWeapon.Enabled = false;
@@ -155,7 +154,12 @@ namespace RiboShock.Controller {
 				
 				weaponSecond.node.Enabled = true;
 				weaponSecond.objectWeapon.Enabled = true;
-			} else if (weaponFirst == null) weaponSelect = -1;
+			} else weaponSelect = -1;
+			//Активация строителя
+			if (weaponSecond != null) {
+				if (weaponSecond.objectWeapon.Enabled) weaponSecond.objectWeapon.WeaponBuilder_Active (true);
+				else weaponSecond.objectWeapon.WeaponBuilder_Active (false);
+			}
 		}
 	}
 }
