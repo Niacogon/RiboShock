@@ -52,6 +52,7 @@ namespace RiboShock.Controller {
 			//Диактивация подбора
 			newItem.body.Enabled = false;
 			newItem.objectRotation.Enabled = false;
+			newItem.objectWeapon.Enabled = false;
 			//Установка объекта к точке
 			newItem.node.Enabled = false;
 			newItem.node.Parent = parentItems;
@@ -88,6 +89,7 @@ namespace RiboShock.Controller {
 			//Активаци подбора предмета
 			curItem.body.Enabled = true;
 			curItem.objectRotation.Enabled = true;
+			curItem.objectWeapon.Enabled = false;
 			//Удаление из списка
 			items.Remove (curItem);
 		}
@@ -136,13 +138,23 @@ namespace RiboShock.Controller {
 		void ActiveWeapon () {
 			//Первого оружия
 			if (weaponSelect == 0 && weaponFirst != null) {
-				if (weaponSecond != null) weaponSecond.node.Enabled = false;
+				if (weaponSecond != null) {
+					weaponSecond.node.Enabled = false;
+					weaponSecond.objectWeapon.Enabled = false;
+				}
+				
 				weaponFirst.node.Enabled = true;
+				weaponFirst.objectWeapon.Enabled = true;
 			} else if (weaponSecond == null) weaponSelect = -1;
 			//Второе оружия
 			if (weaponSelect == 1 && weaponSecond != null) {
-				if (weaponFirst != null) weaponFirst.node.Enabled = false;
+				if (weaponFirst != null) {
+					weaponFirst.node.Enabled = false;
+					weaponFirst.objectWeapon.Enabled = false;
+				}
+				
 				weaponSecond.node.Enabled = true;
+				weaponSecond.objectWeapon.Enabled = true;
 			} else if (weaponFirst == null) weaponSelect = -1;
 		}
 	}

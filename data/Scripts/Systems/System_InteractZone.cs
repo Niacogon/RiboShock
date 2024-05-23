@@ -49,6 +49,8 @@ namespace RiboShock.Systems {
 		/// Входящий объект
 		/// </param>
 		void EnteringBody (Body enteringBody) {
+			if (!enteringBody) return;
+			
 			//Предметы
 			if (enteringBody.Object.GetComponent <System_Item> ()) {
 				canActive = true;
@@ -64,6 +66,8 @@ namespace RiboShock.Systems {
 		/// Выходящий объект
 		/// </param>
 		void LeavingBody (Body leavingBody) {
+			if (!leavingBody) return;
+			
 			//Предметы
 			if (leavingBody.Object.GetComponent <System_Item> () && currentItem == leavingBody.Object.GetComponent <System_Item> ()) {
 				canActive = false;

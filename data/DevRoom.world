@@ -8,7 +8,7 @@
 		</unigine_editor>
 	</data>
 	<sound>
-		<enabled>1</enabled>
+		<enabled>0</enabled>
 		<sound_manager_load_samples>0</sound_manager_load_samples>
 		<sound_manager_sample_static_memory>64</sound_manager_sample_static_memory>
 		<sound_manager_sample_stream_memory>16</sound_manager_sample_stream_memory>
@@ -709,7 +709,7 @@
 			<vertex type="float" num_vertex="121" offset="32" size="4">0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1</vertex>
 			<vertex type="float" num_vertex="121" offset="48" size="4">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vertex>
 			<indices num_indices="600">107 106 117 118 119 107 107 119 108 118 107 117 18 19 7 7 19 8 19 18 29 30 19 29 9 8 19 30 31 19 20 9 19 19 31 20 43 41 29 29 41 30 31 30 41 110 111 99 99 111 100 99 105 116 110 99 116 112 101 111 101 100 111 104 116 105 115 116 104 112 113 101 101 113 102 115 104 114 3 2 13 14 3 13 24 13 23 24 25 13 13 25 14 24 35 25 23 35 24 23 22 37 34 23 37 34 35 23 35 33 25 45 35 46 45 44 35 35 44 33 35 34 46 0 11 1 6 11 0 11 12 1 11 17 28 17 11 6 22 11 28 22 23 11 11 23 12 12 13 1 1 13 2 6 5 16 17 6 16 13 12 23 77 66 79 79 91 77 79 78 89 90 91 79 90 79 89 79 68 78 91 90 101 102 91 101 81 78 68 81 89 78 101 89 100 89 101 90 89 88 99 100 89 99 88 89 81 4 10 21 15 4 21 16 4 15 4 16 5 9 21 10 21 20 31 32 21 31 20 21 9 26 21 32 21 26 15 16 15 26 54 64 53 64 54 65 75 64 76 64 65 76 76 85 75 87 85 76 85 87 95 96 85 95 96 97 85 85 97 86 107 95 106 95 107 96 97 96 107 108 97 107 108 109 97 97 109 98 98 83 97 83 86 97 82 84 92 93 82 92 83 92 84 92 98 109 103 92 109 103 104 92 92 104 93 98 92 83 120 109 119 114 109 120 109 114 103 109 108 119 104 103 114 45 56 44 56 55 44 46 56 45 67 56 68 67 66 56 56 46 57 56 66 55 56 57 68 46 47 58 57 46 58 66 67 79 68 79 67 42 31 41 42 39 31 31 39 32 39 42 52 41 52 42 41 43 54 53 41 54 52 41 53 51 39 52 51 50 39 39 50 40 63 52 64 63 62 52 52 53 64 52 62 51 69 81 68 70 81 69 81 80 94 88 81 94 80 81 70 70 71 82 80 70 82 82 94 80 94 93 104 105 94 104 105 99 94 94 99 88 93 94 82 16 28 17 27 16 26 27 28 16 28 37 22 28 27 38 36 28 38 37 28 36 26 38 27 40 38 26 26 32 39 40 26 39 37 46 34 37 36 48 47 37 48 47 46 37 38 48 36 38 40 50 49 38 50 49 48 38 61 50 62 50 51 62 62 72 61 62 63 74 73 62 74 72 62 73 84 72 83 82 72 84 72 73 83 72 82 71 64 74 63 74 75 85 86 74 85 74 64 75 86 83 74 74 83 73 48 58 47 59 48 60 59 58 48 48 49 60 69 68 58 58 68 57 58 59 70 69 58 70 60 70 59 60 61 72 71 60 72 61 60 50 70 60 71 50 60 49</indices>
-			<surface name="grid_for_world_creation" intersection="1" collision="1" physics_friction="1" physics_restitution="1" material="001dc611e2ca7385e50593ebc1c181e2e370240c"/>
+			<surface name="grid_for_world_creation" collision="1" physics_friction="1" physics_restitution="1" material="001dc611e2ca7385e50593ebc1c181e2e370240c"/>
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
 		</node>
 		<node type="LightWorld" id="824505625" name="sun">
@@ -797,8 +797,8 @@
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
 					<mesh_name>guid://282d1fe0e321ffda811b964362f4ae635c4c0c14</mesh_name>
-					<surface name="Бетон.001" intersection="1" material="b50d447466b5a543f70c09c68846566d9f15c4e8"/>
-					<surface name="light concrete" intersection="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
+					<surface name="Бетон.001" material="b50d447466b5a543f70c09c68846566d9f15c4e8"/>
+					<surface name="light concrete" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
 					<body type="BodyDummy" id="2076903275" frozen="0">
 						<shape type="ShapeBox" id="590074492" transform="1 0 0 0 0 1 0 0 0 0 1 0 0 -2.38418579e-07 0.0895725489 1">
 							<size>4.00099897 4.00099897 0.404202789</size>
@@ -813,8 +813,8 @@
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
 					<mesh_name>guid://b5c031905af9c7f3ab234533e74a1b85703c96c4</mesh_name>
-					<surface name="Бетон.001" intersection="1" material="b50d447466b5a543f70c09c68846566d9f15c4e8"/>
-					<surface name="light concrete" intersection="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
+					<surface name="Бетон.001" material="b50d447466b5a543f70c09c68846566d9f15c4e8"/>
+					<surface name="light concrete" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
 					<body type="BodyDummy" id="1530891580" frozen="0">
 						<shape type="ShapeBox" id="2070522193" transform="1 0 0 0 0 1 0 0 0 0 1 0 0 -1.72929367e-06 0.0911290646 1">
 							<size>8.00099945 8.00099945 0.404203504</size>
@@ -829,8 +829,8 @@
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
 					<mesh_name>guid://72f93740910181966f08182339081f7ec3cab574</mesh_name>
-					<surface name="light concrete" intersection="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
-					<surface name="bark" intersection="1" material="b50d447466b5a543f70c09c68846566d9f15c4e8"/>
+					<surface name="light concrete" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
+					<surface name="bark" material="b50d447466b5a543f70c09c68846566d9f15c4e8"/>
 					<body type="BodyDummy" id="1388994321" frozen="0">
 						<shape type="ShapeBox" id="1966682938" transform="1 0 0 0 0 1 0 0 0 0 1 0 1.18346179e-07 -1.55058387e-06 0.091647625 1">
 							<size>12.0009995 12.0009995 0.40420419</size>
@@ -845,8 +845,8 @@
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
 					<mesh_name>guid://8bac1a380073855be529393b12d75068f28cceec</mesh_name>
-					<surface name="light concrete" intersection="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
-					<surface name="bark" intersection="1" material="b50d447466b5a543f70c09c68846566d9f15c4e8"/>
+					<surface name="light concrete" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
+					<surface name="bark" material="b50d447466b5a543f70c09c68846566d9f15c4e8"/>
 					<body type="BodyDummy" id="251349831" frozen="0">
 						<shape type="ShapeBox" id="1003304648">
 							<size>4.025033 4.02503395 4.02503347</size>
@@ -861,8 +861,8 @@
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
 					<mesh_name>guid://7810c5e83e55bb75badb9a2beb068c75040ec39c</mesh_name>
-					<surface name="light concrete" intersection="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
-					<surface name="bark" intersection="1" material="b50d447466b5a543f70c09c68846566d9f15c4e8"/>
+					<surface name="light concrete" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
+					<surface name="bark" material="b50d447466b5a543f70c09c68846566d9f15c4e8"/>
 					<body type="BodyDummy" id="1597465992" frozen="0">
 						<shape type="ShapeBox" id="345372621">
 							<size>4.025033 8.0250349 8.02503395</size>
@@ -877,8 +877,8 @@
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
 					<mesh_name>guid://2b08e5989fd7f31e74c29f1bcf2b313e19cbcc4c</mesh_name>
-					<surface name="light concrete" intersection="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
-					<surface name="bark" intersection="1" material="b50d447466b5a543f70c09c68846566d9f15c4e8"/>
+					<surface name="light concrete" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
+					<surface name="bark" material="b50d447466b5a543f70c09c68846566d9f15c4e8"/>
 					<body type="BodyDummy" id="1029566861" frozen="0">
 						<shape type="ShapeBox" id="1137457318" transform="1 0 0 0 0 1 0 0 0 0 1 0 2.38418579e-07 -1.90734863e-06 -2.38418579e-07 1">
 							<size>4.02503347 12.0250359 12.0250359</size>
@@ -893,8 +893,8 @@
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
 					<mesh_name>guid://2b08e5989fd7f31e74c29f1bcf2b313e19cbcc4c</mesh_name>
-					<surface name="light concrete" intersection="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
-					<surface name="bark" intersection="1" material="b50d447466b5a543f70c09c68846566d9f15c4e8"/>
+					<surface name="light concrete" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
+					<surface name="bark" material="b50d447466b5a543f70c09c68846566d9f15c4e8"/>
 					<body type="BodyDummy" id="1804167526" frozen="0">
 						<shape type="ShapeBox" id="1253488547" transform="1 0 0 0 0 1 0 0 0 0 1 0 2.38418579e-07 -1.90734863e-06 -2.38418579e-07 1">
 							<size>4.02503347 12.0250359 12.0250359</size>
@@ -909,8 +909,8 @@
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
 					<mesh_name>guid://72f93740910181966f08182339081f7ec3cab574</mesh_name>
-					<surface name="light concrete" intersection="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
-					<surface name="bark" intersection="1" material="b50d447466b5a543f70c09c68846566d9f15c4e8"/>
+					<surface name="light concrete" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
+					<surface name="bark" material="b50d447466b5a543f70c09c68846566d9f15c4e8"/>
 					<body type="BodyDummy" id="1598575731" frozen="0">
 						<shape type="ShapeBox" id="1993040912" transform="1 0 0 0 0 1 0 0 0 0 1 0 1.18346179e-07 -1.55058387e-06 0.091647625 1">
 							<size>12.0009995 12.0009995 0.40420419</size>
@@ -925,10 +925,10 @@
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
 					<mesh_name>guid://42cfe288adec14ceba8c7c4b5cf275b5485aee3c</mesh_name>
-					<surface name="Бетон.001" intersection="1" material="e6b1bf15e0bf60cdb418b1b89a028a9482092b11"/>
-					<surface name="sm_trunk02_withmoss" intersection="1" material="cc737ff5a4c35f3cce2fbd18742a3be2ea49ddf1"/>
-					<surface name="m_leaves02" intersection="1" material="d92a1c69c3bb100c66b386fc7af26de86678ae25"/>
-					<surface name="light concrete" intersection="1" material="fc4a7d8576b908fafbde7d68b3effd744631d281"/>
+					<surface name="Бетон.001" material="e6b1bf15e0bf60cdb418b1b89a028a9482092b11"/>
+					<surface name="sm_trunk02_withmoss" material="cc737ff5a4c35f3cce2fbd18742a3be2ea49ddf1"/>
+					<surface name="m_leaves02" material="d92a1c69c3bb100c66b386fc7af26de86678ae25"/>
+					<surface name="light concrete" material="fc4a7d8576b908fafbde7d68b3effd744631d281"/>
 					<body type="BodyDummy" id="603721526" frozen="0">
 						<shape type="ShapeCapsule" id="338782255" transform="1 0 0 0 0 1 0 0 0 0 1 0 -0.00328404829 -0.0162601303 -0.98622179 1">
 							<radius>0.300000012</radius>
@@ -947,8 +947,8 @@
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
 					<mesh_name>guid://8bac1a380073855be529393b12d75068f28cceec</mesh_name>
-					<surface name="light concrete" intersection="1" collision="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
-					<surface name="bark" intersection="1" material="fd742aa5edface168b0008084d4c6ecf90d46da1"/>
+					<surface name="light concrete" collision="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
+					<surface name="bark" material="fd742aa5edface168b0008084d4c6ecf90d46da1"/>
 					<transform>1.0000006 4.7293724e-11 6.7710935e-05 0.0 -4.7293724e-11 0.99999994 -9.8667449e-08 0.0 -6.7710935e-05 9.86727e-08 1.0000004 0.0 -1.15484e-07 -1.1999969 1.6000004 1.0</transform>
 				</node>
 			</node>
@@ -958,8 +958,8 @@
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
 					<mesh_name>guid://8bac1a380073855be529393b12d75068f28cceec</mesh_name>
-					<surface name="light concrete" intersection="1" collision="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
-					<surface name="bark" intersection="1" collision="1" material="fd742aa5edface168b0008084d4c6ecf90d46da1"/>
+					<surface name="light concrete" collision="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
+					<surface name="bark" collision="1" material="fd742aa5edface168b0008084d4c6ecf90d46da1"/>
 					<transform>1.0000005 4.7293724e-11 -1.1641532e-10 0.0 -5.0931703e-11 0.99999964 -8.8863061e-08 0.0 0 8.8863118e-08 1.0000002 0.0 -1.1920929e-07 -1 2.0000076 1.0</transform>
 				</node>
 			</node>
@@ -969,8 +969,8 @@
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
 					<mesh_name>guid://8bac1a380073855be529393b12d75068f28cceec</mesh_name>
-					<surface name="light concrete" intersection="1" collision="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
-					<surface name="bark" intersection="1" collision="1" material="fd742aa5edface168b0008084d4c6ecf90d46da1"/>
+					<surface name="light concrete" collision="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
+					<surface name="bark" collision="1" material="fd742aa5edface168b0008084d4c6ecf90d46da1"/>
 					<transform>1.0000006 4.7293724e-11 6.7710993e-05 0.0 -4.7293724e-11 0.99999988 -9.8667428e-08 0.0 -6.7710993e-05 9.86727e-08 1.0000004 0.0 -2.3469329e-07 -1.1999969 1.6000061 1.0</transform>
 				</node>
 			</node>
@@ -980,8 +980,8 @@
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
 					<mesh_name>guid://8bac1a380073855be529393b12d75068f28cceec</mesh_name>
-					<surface name="light concrete" intersection="1" collision="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
-					<surface name="bark" intersection="1" collision="1" material="fd742aa5edface168b0008084d4c6ecf90d46da1"/>
+					<surface name="light concrete" collision="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
+					<surface name="bark" collision="1" material="fd742aa5edface168b0008084d4c6ecf90d46da1"/>
 					<transform>1.0000007 4.7293724e-11 6.7711109e-05 0.0 -4.7293724e-11 0.99999994 -9.8667428e-08 0.0 -6.7711051e-05 9.8672714e-08 1.0000004 0.0 -3.3900142e-07 -1.1999969 1.6000137 1.0</transform>
 				</node>
 			</node>
@@ -991,8 +991,8 @@
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
 					<mesh_name>guid://8bac1a380073855be529393b12d75068f28cceec</mesh_name>
-					<surface name="light concrete" intersection="1" collision="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
-					<surface name="bark" intersection="1" material="fd742aa5edface168b0008084d4c6ecf90d46da1"/>
+					<surface name="light concrete" collision="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
+					<surface name="bark" material="fd742aa5edface168b0008084d4c6ecf90d46da1"/>
 					<transform>1.0000008 4.0017767e-11 6.7711051e-05 0.0 -4.7293724e-11 0.99999988 -9.8667428e-08 0.0 -6.7711109e-05 9.8672714e-08 1.0000004 0.0 -4.5076013e-07 -1.1999969 1.6000214 1.0</transform>
 				</node>
 			</node>
@@ -1002,8 +1002,8 @@
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
 					<mesh_name>guid://8bac1a380073855be529393b12d75068f28cceec</mesh_name>
-					<surface name="light concrete" intersection="1" collision="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
-					<surface name="bark" intersection="1" material="fd742aa5edface168b0008084d4c6ecf90d46da1"/>
+					<surface name="light concrete" collision="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
+					<surface name="bark" material="fd742aa5edface168b0008084d4c6ecf90d46da1"/>
 					<transform>1.0000008 4.0017767e-11 6.7711051e-05 0.0 -4.7293724e-11 0.99999988 -9.8667428e-08 0.0 -6.7711109e-05 9.8672714e-08 1.0000004 0.0 -4.5448542e-07 -1.1999969 1.6000137 1.0</transform>
 				</node>
 			</node>
@@ -1013,8 +1013,8 @@
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
 					<mesh_name>guid://8bac1a380073855be529393b12d75068f28cceec</mesh_name>
-					<surface name="light concrete" intersection="1" collision="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
-					<surface name="bark" intersection="1" material="fd742aa5edface168b0008084d4c6ecf90d46da1"/>
+					<surface name="light concrete" collision="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
+					<surface name="bark" material="fd742aa5edface168b0008084d4c6ecf90d46da1"/>
 					<transform>1.0000007 4.7293724e-11 6.7711109e-05 0.0 -4.7293724e-11 0.99999994 -9.8667428e-08 0.0 -6.7711051e-05 9.8672714e-08 1.0000004 0.0 -3.4272671e-07 -1.1999969 1.6000061 1.0</transform>
 				</node>
 			</node>
@@ -1024,8 +1024,8 @@
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
 					<mesh_name>guid://8bac1a380073855be529393b12d75068f28cceec</mesh_name>
-					<surface name="light concrete" intersection="1" collision="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
-					<surface name="bark" intersection="1" material="fd742aa5edface168b0008084d4c6ecf90d46da1"/>
+					<surface name="light concrete" collision="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
+					<surface name="bark" material="fd742aa5edface168b0008084d4c6ecf90d46da1"/>
 					<transform>1.0000007 4.7293724e-11 6.7711109e-05 0.0 -4.7293724e-11 0.99999994 -9.8667428e-08 0.0 -6.7711051e-05 9.8672714e-08 1.0000004 0.0 -3.4272671e-07 -1.2000046 1.6000061 1.0</transform>
 				</node>
 			</node>
@@ -1035,8 +1035,8 @@
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
 					<mesh_name>guid://8bac1a380073855be529393b12d75068f28cceec</mesh_name>
-					<surface name="light concrete" intersection="1" collision="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
-					<surface name="bark" intersection="1" material="fd742aa5edface168b0008084d4c6ecf90d46da1"/>
+					<surface name="light concrete" collision="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
+					<surface name="bark" material="fd742aa5edface168b0008084d4c6ecf90d46da1"/>
 					<transform>1.0000006 4.7293724e-11 6.7710993e-05 0.0 -4.7293724e-11 0.99999988 -9.8667428e-08 0.0 -6.7710993e-05 9.86727e-08 1.0000004 0.0 -2.3469329e-07 -1.1999969 1.5999985 1.0</transform>
 				</node>
 			</node>
@@ -1046,8 +1046,8 @@
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
 					<mesh_name>guid://8bac1a380073855be529393b12d75068f28cceec</mesh_name>
-					<surface name="light concrete" intersection="1" collision="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
-					<surface name="bark" intersection="1" material="fd742aa5edface168b0008084d4c6ecf90d46da1"/>
+					<surface name="light concrete" collision="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
+					<surface name="bark" material="fd742aa5edface168b0008084d4c6ecf90d46da1"/>
 					<transform>1.0000011 3.6379788e-11 6.7711168e-05 0.0 -4.7293724e-11 0.99999994 -9.8667442e-08 0.0 -6.7711168e-05 9.8672729e-08 1.0000004 0.0 -4.4703484e-07 -1.1999969 1.6000214 1.0</transform>
 				</node>
 			</node>
@@ -1056,12 +1056,12 @@
 			<streaming_mode_vram>0</streaming_mode_vram>
 			<streaming_mode_ram>0</streaming_mode_ram>
 			<mesh_name>guid://b8961a86937a715dc860e47514fa3e7d765f1859</mesh_name>
-			<surface name="material.011" intersection="1" material="fabe0f38ffd4a800070ab29569585db3b0a46ebc"/>
-			<surface name="material.010" intersection="1" material="f8d7ae48886ede53e5ab19e53efbaa37501eeccc"/>
-			<surface name="material.005" intersection="1" material="63a44c4077a52f9fe6c429bdeb8483eb0901e744"/>
-			<surface name="material.003" intersection="1" material="f0bff31c6e98abbeea6b5109b48d60cd6e26a360"/>
-			<surface name="material.002" intersection="1" material="09bc1ea449b0dae876ad50b170c8a6c3dfdfbe68"/>
-			<surface name="material.001" intersection="1" material="3d6a7f2c34342a05dee2195901446ac25d377670"/>
+			<surface name="material.011" material="fabe0f38ffd4a800070ab29569585db3b0a46ebc"/>
+			<surface name="material.010" material="f8d7ae48886ede53e5ab19e53efbaa37501eeccc"/>
+			<surface name="material.005" material="63a44c4077a52f9fe6c429bdeb8483eb0901e744"/>
+			<surface name="material.003" material="f0bff31c6e98abbeea6b5109b48d60cd6e26a360"/>
+			<surface name="material.002" material="09bc1ea449b0dae876ad50b170c8a6c3dfdfbe68"/>
+			<surface name="material.001" material="3d6a7f2c34342a05dee2195901446ac25d377670"/>
 			<body type="BodyDummy" id="368290744" frozen="0">
 				<shape type="ShapeSphere" id="892468151" transform="1 0 0 0 0 1 0 0 0 0 1 0 -0.00107050745 -0.00173312891 -0.0100977942 1">
 					<radius>0.300000012</radius>
@@ -1071,10 +1071,11 @@
 				<property parent="12eae39c619497ecc2a48e93417d3b53a075c817" guid="77e96bc7a92e6cae2ab48d2f1c733fb825bf578c"/>
 				<property parent="3e63fd7363fc488ffd8cbe23907da8d846e3aa9a" guid="2b89ab926def7e31a6ba2c4af6f6d87cf0b42d7b">
 					<parameter name="objectRotation">77e96bc7a92e6cae2ab48d2f1c733fb825bf578c</parameter>
+					<parameter name="objectWeapon">c65884827cd62798d4ed5b34ef58f63a5fc237f6</parameter>
 					<parameter name="itemName">Пистолет</parameter>
 					<parameter name="itemId">1</parameter>
 				</property>
-				<property parent="a1a26a6b3e63b742fd5d7a614f237c071f8bdc95" guid="c65884827cd62798d4ed5b34ef58f63a5fc237f6"/>
+				<property enabled="0" parent="a1a26a6b3e63b742fd5d7a614f237c071f8bdc95" guid="c65884827cd62798d4ed5b34ef58f63a5fc237f6"/>
 			</properties>
 			<transform>0.99999988 -7.5730641e-29 1.2705492e-21 0.0 7.5730737e-29 0.99999988 -7.8159708e-14 0.0 -1.2705493e-21 7.8159708e-14 0.99999994 0.0 -6.4999995 -21.399998 1.3 1.0</transform>
 		</node>
@@ -1082,9 +1083,9 @@
 			<streaming_mode_vram>0</streaming_mode_vram>
 			<streaming_mode_ram>0</streaming_mode_ram>
 			<mesh_name>guid://307618c9a9b9b4ab53229f2a00f14ff03ffb4446</mesh_name>
-			<surface name="material.008" intersection="1" material="f6985d631f40b897a38e09acc57ee3b4972f14a8"/>
-			<surface name="material.007" intersection="1" material="cc487d37d21f789a1b49c7d0ff8a73044076f70c"/>
-			<surface name="material.006" intersection="1" material="19f5154b4e7efbfbfdb20f346d939e4fdadc74b0"/>
+			<surface name="material.008" material="f6985d631f40b897a38e09acc57ee3b4972f14a8"/>
+			<surface name="material.007" material="cc487d37d21f789a1b49c7d0ff8a73044076f70c"/>
+			<surface name="material.006" material="19f5154b4e7efbfbfdb20f346d939e4fdadc74b0"/>
 			<surface name="material.005" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
 			<body type="BodyDummy" id="892468151" frozen="0">
 				<shape type="ShapeSphere" id="1864541610" transform="1 0 0 0 0 1 0 0 0 0 1 0 -0.000332349038 0.0834910274 0.0172789171 1">
@@ -1095,11 +1096,12 @@
 				<property parent="12eae39c619497ecc2a48e93417d3b53a075c817" guid="9ee00e7a34bdc9c285ddbe3222d795c56fe63c83"/>
 				<property parent="3e63fd7363fc488ffd8cbe23907da8d846e3aa9a" guid="f42fb9d7722e7449e303e53f90531b0c35921edc">
 					<parameter name="objectRotation">9ee00e7a34bdc9c285ddbe3222d795c56fe63c83</parameter>
+					<parameter name="objectWeapon">aaa35d73725f50b5765d4a29831a2775f29dcedd</parameter>
 					<parameter name="itemName">Аэро-пушка</parameter>
 					<parameter name="itemId">2</parameter>
 					<parameter name="itemType">1</parameter>
 				</property>
-				<property parent="a1a26a6b3e63b742fd5d7a614f237c071f8bdc95" guid="aaa35d73725f50b5765d4a29831a2775f29dcedd">
+				<property enabled="0" parent="a1a26a6b3e63b742fd5d7a614f237c071f8bdc95" guid="aaa35d73725f50b5765d4a29831a2775f29dcedd">
 					<parameter name="weaponBuilder_ObjectMaket">727867153</parameter>
 					<parameter name="weaponBuilder_Object">1534255572</parameter>
 				</property>
@@ -1111,8 +1113,8 @@
 					<streaming_mode_vram>0</streaming_mode_vram>
 					<streaming_mode_ram>0</streaming_mode_ram>
 					<mesh_name>guid://282d1fe0e321ffda811b964362f4ae635c4c0c14</mesh_name>
-					<surface name="Бетон.001" intersection="1" material="af7150ac30cb9a86fddb8cee7b7a1c72cdaf5940"/>
-					<surface name="light concrete" intersection="1" material="af7150ac30cb9a86fddb8cee7b7a1c72cdaf5940"/>
+					<surface name="Бетон.001" material="af7150ac30cb9a86fddb8cee7b7a1c72cdaf5940"/>
+					<surface name="light concrete" material="af7150ac30cb9a86fddb8cee7b7a1c72cdaf5940"/>
 					<transform>1 6.9377098e-23 3.8213714e-15 0.0 2.4143067e-22 1 -8.7422777e-08 0.0 -3.8213714e-15 8.7422777e-08 1 0.0 0 0 0 1.0</transform>
 				</node>
 			</node>
@@ -1125,7 +1127,7 @@
 					<surface name="Бетон.001" intersection="1" material="e6b1bf15e0bf60cdb418b1b89a028a9482092b11"/>
 					<surface name="light concrete" intersection="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6"/>
 					<body type="BodyDummy" id="1174080736" frozen="0">
-						<shape type="ShapeBox" id="659305801" transform="1 0 0 0 0 1 0 0 0 0 1 0 0 -2.38418579e-07 0.0895725489 1">
+						<shape type="ShapeBox" id="659305801" transform="1 -9.02779877e-36 2.01948392e-28 0 3.0092641e-36 1 0 0 -1.00974196e-28 0 1 0 0 1.90734863e-06 -0.0104275942 1">
 							<size>4.00099897 4.00099897 0.404202789</size>
 						</shape>
 					</body>
@@ -1197,7 +1199,7 @@
 			<streaming_mode_vram>0</streaming_mode_vram>
 			<streaming_mode_ram>0</streaming_mode_ram>
 			<mesh_name>guid://869400360584e2d40e2d57229f15613df403213a</mesh_name>
-			<surface name="capsule" intersection="1" material="6fb8648d11b73439e59461512005d1ff95aec715"/>
+			<surface name="capsule" material="6fb8648d11b73439e59461512005d1ff95aec715"/>
 			<properties>
 				<property parent="c23743caa24e100f61a96976a363db0fbdcc058e" guid="1a49b75cada5771622c977e86d5dfbe923dc4c40">
 					<parameter name="targetDirection">768359719</parameter>

@@ -2,7 +2,7 @@
 <asset version="2.18.0.1">
 	<guid>a9dc20da7fec0442866254927688a84f0c3c0663</guid>
 	<type>component</type>
-	<hash>a69da8c8</hash>
+	<hash>836dcb08</hash>
 	<runtimes>
 		<runtime id="a9dc20da7fec0442866254927688a84f0c3c0663" name="Controller_Inventory.cs" link="0"/>
 		<runtime id="92699568127d9246cff330608d843f09990b8949" name="Controller_Inventory.prop" link="1" type="4"/>

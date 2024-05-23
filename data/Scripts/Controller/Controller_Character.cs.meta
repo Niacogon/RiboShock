@@ -2,7 +2,7 @@
 <asset version="2.18.0.1">
 	<guid>49aca20c8baebc9fef139798df2d7c6cde0edbf0</guid>
 	<type>component</type>
-	<hash>947a9188</hash>
+	<hash>5e8ed7fb</hash>
 	<runtimes>
 		<runtime id="49aca20c8baebc9fef139798df2d7c6cde0edbf0" name="Controller_Character.cs" link="0"/>
 		<runtime id="c23743caa24e100f61a96976a363db0fbdcc058e" name="Controller_Character.prop" link="1" type="4"/>

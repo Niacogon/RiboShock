@@ -2,7 +2,7 @@
 <asset version="2.18.0.1">
 	<guid>4c060014812f392a32ef62a4099b04698cb9b217</guid>
 	<type>component</type>
-	<hash>6f7ebad1</hash>
+	<hash>40dcfb4c</hash>
 	<runtimes>
 		<runtime id="4c060014812f392a32ef62a4099b04698cb9b217" name="System_InteractZone.cs" link="0"/>
 		<runtime id="7afcd4924f248e54ece8a8a2d8c94fa4a77913dd" name="System_InteractZone.prop" link="1" type="4"/>

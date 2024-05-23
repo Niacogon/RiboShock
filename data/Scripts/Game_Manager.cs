@@ -61,6 +61,8 @@ namespace RiboShock {
 
 		[Parameter (Group = "Клавиатура", Title = "Взаимодествие")]
 		public Input.KEY interactionKey = Input.KEY.F;
+		[Parameter (Group = "Клавиатура", Title = "Уничтожение")]
+		public Input.KEY destroyKey = Input.KEY.Q;
 		[Parameter (Group = "Клавиатура", Title = "Инвентарь")]
 		public Input.KEY inventoryKey = Input.KEY.I;
 		[Parameter (Group = "Клавиатура", Title = "Ячейки")]

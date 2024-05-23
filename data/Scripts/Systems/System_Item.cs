@@ -11,6 +11,9 @@ namespace RiboShock.Systems {
 	public class System_Item : Component {
 		[Parameter (Title = "Поворот предмета")]
 		public System_ObjectRotation objectRotation;
+		[Parameter (Title = "Оружие")]
+		public System_Weapon objectWeapon;
+		
 		/// <summary>
 		/// Физические свойства
 		/// </summary>

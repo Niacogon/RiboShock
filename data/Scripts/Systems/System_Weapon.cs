@@ -20,10 +20,19 @@ namespace RiboShock.Systems {
 		private float weaponBuilder_Offset = 5;
 		[ShowInEditor, ParameterCondition (nameof (weaponType), 0), Parameter (Group = "Строитель", Title = "Скорость вращения")]
 		private float weaponBuilder_SpeedRotate = 3;
+		[ShowInEditor, ParameterCondition (nameof (weaponType), 0), Parameter (Group = "Строитель", Title = "Дистанция уничтожения")]
+		private float rayDistance = 100;
+		/// <summary>
+		/// Текущий поворот по оси X
+		/// </summary>
+		private float weaponBuilder_CurAxisX = 90;
+		private WorldIntersection ray;
+		private Unigine.Object rayObj;
 		
 		void Init () {
 			System_Inputs.mouseFire += WeaponFire;
 			System_Inputs.mouseAim += WeaponAim;
+			System_Inputs.onDestroy += WeaponBuilder_Destroy;
 			System_Inputs.OnChangeMouseWheel_Event += WeaponBuilder_Rotation;
 			//Строитель
 			if (weaponType == 0 && weaponBuilder_ObjectMaket != null) weaponBuilder_ObjectMaket.Enabled = false;
@@ -39,6 +48,7 @@ namespace RiboShock.Systems {
 		void Shutdown () {
 			System_Inputs.mouseFire -= WeaponFire;
 			System_Inputs.mouseAim -= WeaponAim;
+			System_Inputs.onDestroy -= WeaponBuilder_Destroy;
 			System_Inputs.OnChangeMouseWheel_Event -= WeaponBuilder_Rotation;
 		}
 
@@ -85,14 +95,13 @@ namespace RiboShock.Systems {
 		/// </summary>
 		void WeaponBuilder_SetTransform () {
 			//Позиция
-			mat4 _nodeTransform = node.WorldTransform;
-			vec3 _newPosition = node.WorldPosition + (_nodeTransform.GetColumn3 (1) * weaponBuilder_Offset);
-			
+			vec3 _newPosition = node.WorldPosition + (node.WorldTransform.GetColumn3 (1) * weaponBuilder_Offset);
 			weaponBuilder_ObjectMaket.WorldPosition = _newPosition;
 			//Поворот
-			/*vec3 _targetRot = node.GetWorldRotation ().Euler;
+			vec3 _targetDir = weaponBuilder_ObjectMaket.WorldPosition - node.WorldPosition;
+			weaponBuilder_ObjectMaket.SetWorldDirection (_targetDir, vec3.UP, MathLib.AXIS.Y);
 
-			weaponBuilder_Object.SetWorldRotation (new quat (_targetRot.x, _targetRot.y, _targetRot.z));*/
+			weaponBuilder_ObjectMaket.Rotate (weaponBuilder_CurAxisX, 0, 0);
 		}
 		
 		/// <summary>
@@ -103,8 +112,27 @@ namespace RiboShock.Systems {
 		/// </param>
 		void WeaponBuilder_Rotation (int value) {
 			if (!System_Inputs.weaponActive || weaponType != 0 || weaponBuilder_ObjectMaket == null) return;
+
+			weaponBuilder_CurAxisX += value * weaponBuilder_SpeedRotate;
 			
-			weaponBuilder_ObjectMaket.Rotate (value * weaponBuilder_SpeedRotate, 0, 0);
+			if (weaponBuilder_CurAxisX >= 360) weaponBuilder_CurAxisX = 0;
+			if (weaponBuilder_CurAxisX < 0) weaponBuilder_CurAxisX += 360;
+		}
+
+		/// <summary>
+		/// Уничножение объекта
+		/// </summary>
+		void WeaponBuilder_Destroy () {
+			if (weaponType != 0) return;
+			
+			vec3 _start = Engine.MainPlayer.WorldPosition;
+			vec3 _end = Engine.MainPlayer.GetWorldDirection () * rayDistance;
+			rayObj = World.GetIntersection (_start, _end, 1, ray);
+
+			if (rayObj) {
+				if (rayObj.RootNode) rayObj.RootNode.DeleteLater ();
+				else rayObj.DeleteLater ();
+			}
 		}
 	}
 }

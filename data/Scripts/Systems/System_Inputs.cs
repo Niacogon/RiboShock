@@ -33,6 +33,7 @@ namespace RiboShock.Systems {
 
 			SetTabulation ();
 			SetInteraction ();
+			SetDestroy ();
 			SetInventoryActive ();
 			SetSlot ();
 			//мышь
@@ -145,6 +146,18 @@ namespace RiboShock.Systems {
 		}
 		
 		/// <summary>
+		/// Уничтожение
+		/// </summary>
+		public static Action onDestroy;
+		/// <summary>
+		/// Собюытие уничтожения
+		/// </summary>
+		static void SetDestroy () {
+			if (mouseGrab && Input.IsKeyDown (customKeyAssignment.destroyKey))
+				onDestroy?.Invoke ();
+		}
+		
+		/// <summary>
 		/// Инвентарь
 		/// </summary>
 		public static bool inventoryActive;// { private set; get; }
@@ -226,7 +239,7 @@ namespace RiboShock.Systems {
 		/// </summary>
 		static void SetMouseFire () {
 			if (mouseGrab && Input.IsMouseButtonDown (customKeyAssignment.mouseFire)) 
-				mouseFire.Invoke ();
+				mouseFire?.Invoke ();
 		}
 
 		/// <summary>
@@ -238,7 +251,7 @@ namespace RiboShock.Systems {
 		/// </summary>
 		static void SetMouseAim () {
 			if (mouseGrab && Input.IsMouseButtonDown (customKeyAssignment.mouseAim)) 
-				mouseAim.Invoke ();
+				mouseAim?.Invoke ();
 		}
 
 		/// <summary>

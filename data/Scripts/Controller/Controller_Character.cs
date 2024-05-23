@@ -318,13 +318,15 @@ namespace RiboShock.Controller {
 			//получения стокновения
 			vec3 _cap0 = shape.BottomCap;
 			vec3 _cap1 = shape.TopCap;
-			for (int i = 0; i < rigid.NumContacts; i++) {
-				vec3 _point = rigid.GetContactPoint (i);
-				vec3 _normal = rigid.GetContactNormal (i);
-				if (MathLib.Dot (_normal, _up) > 0.5f && MathLib.Dot (new vec3 (_point - _cap0), _up) < 0.0f)
-					ground = 1;
-				if (MathLib.Dot (_normal, _up) < -0.5f && MathLib.Dot (new vec3 (_point - _cap1), _up) > 0.0f)
-					ceiling = 1;
+			for (int _cp = 0; _cp < rigid.NumContacts; _cp++) {
+				if (rigid.GetContactPoint (_cp)) {
+					vec3 _point = rigid.GetContactPoint (_cp);
+					vec3 _normal = rigid.GetContactNormal (_cp);
+					if (MathLib.Dot (_normal, _up) > 0.5f && MathLib.Dot (new vec3 (_point - _cap0), _up) < 0.0f)
+						ground = 1;
+					if (MathLib.Dot (_normal, _up) < -0.5f && MathLib.Dot (new vec3 (_point - _cap1), _up) > 0.0f)
+						ceiling = 1;
+				}
 			}
 
 			//установка текущих параметров
