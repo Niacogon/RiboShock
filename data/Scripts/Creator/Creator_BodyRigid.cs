@@ -20,7 +20,7 @@ namespace RiboShock.Creator {
 		ShapeCapsule shape = new ShapeCapsule ();
 
 		[ShowInEditor, Parameter (Group = "Масса физического тела", Title = "Физическая масса")]
-		float physicalMass = 30.0f;
+		float physicalMass = 15.0f;
 		
 		[ShowInEditor, Parameter (Group = "Масса физического тела", Title = "Скорость", Tooltip = "x - шаг/ползти, y - бег, z - спринт)")]
 		vec3 velocity = new vec3 (1.5f, 3.4f, 5.8f);

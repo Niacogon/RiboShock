@@ -6,6 +6,7 @@
 	</struct>
 	<struct name="Controller_Inventory">
 		<parameter name="parentItems" type="node" title="Хранилище предметов"/>
+		<parameter name="spawnPoint" type="node" title="Точка спавна"/>
 	</struct>
 	<parameter name="interactionZone" type="property" title="Триггер взаимодействия" group="Панель взаимодействия" filter="7afcd4924f248e54ece8a8a2d8c94fa4a77913dd" flags="internal"/>
 	<parameter name="interactionNameSize" type="int" title="Размер имени объекта" group="Панель взаимодействия">25</parameter>

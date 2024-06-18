@@ -65,6 +65,8 @@ namespace RiboShock {
 		public Input.KEY destroyKey = Input.KEY.Q;
 		[Parameter (Group = "Клавиатура", Title = "Инвентарь")]
 		public Input.KEY inventoryKey = Input.KEY.I;
+		[Parameter (Group = "Клавиатура", Title = "Граната")]
+		public Input.KEY grenadeKey = Input.KEY.G;
 		[Parameter (Group = "Клавиатура", Title = "Ячейки")]
 		public Input.KEY [] inventorySlots = new [] {
 			Input.KEY.ANY_DIGIT_1,

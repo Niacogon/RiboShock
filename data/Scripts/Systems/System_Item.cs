@@ -39,10 +39,10 @@ namespace RiboShock.Systems {
 			return itemId;
 		}
 
-		[ShowInEditor, ParameterSwitch (Title = "Тип предмета", Items = "Первое оружие,Второе оружие")]
+		[ShowInEditor, ParameterSwitch (Title = "Тип предмета", Items = "Первое оружие,Второе оружие,Граната")]
 		private int itemType = 0;
 		/// <summary>
-		/// Запрос типа оружия (0 = первое оржуие; 1 = второе оружие)
+		/// Запрос типа оружия (0 = первое оржуие; 1 = второе оружие; 2 = граната)
 		/// </summary>
 		/// <returns></returns>
 		public int GetTypeItem () {

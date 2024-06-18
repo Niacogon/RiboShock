@@ -9,7 +9,7 @@ namespace RiboShock.Systems {
 	/// </summary>
 	[Component (PropertyGuid = "a1a26a6b3e63b742fd5d7a614f237c071f8bdc95")]
 	public class System_Weapon : Component {
-		[ShowInEditor, ParameterSwitch (Title = "Тип оружия", Items = "Строитель,Дальний бой")]
+		[ShowInEditor, ParameterSwitch (Title = "Тип оружия", Items = "Строитель,Дальний бой,Граната")]
 		private int weaponType = 0;
 
 		[ShowInEditor, ParameterCondition (nameof (weaponType), 0), Parameter (Group = "Строитель", Title = "Объект макета")]
@@ -28,7 +28,22 @@ namespace RiboShock.Systems {
 		private float weaponBuilder_CurAxisX = 90;
 		private WorldIntersection ray;
 		private Unigine.Object rayObj;
-		
+
+		[ShowInEditor, ParameterCondition (nameof (weaponType), 2), Parameter (Group = "Граната", Title = "Активна?")]
+		private bool weaponGrenade_isActive = true;
+		[ShowInEditor, ParameterCondition (nameof (weaponType), 2), Parameter (Group = "Граната", Title = "Сила броска")]
+		private float weaponGrenade_Impuls = 500f;
+		[ShowInEditor, ParameterCondition (nameof (weaponType), 2), Parameter (Group = "Граната", Title = "Время дитонации")]
+		private float weaponGrenade_Time = 3f;
+		/// <summary>
+		/// Время детонации
+		/// </summary>
+		private float weaponGrenade_TimeDetonation = 0f;
+		[ShowInEditor, ParameterCondition (nameof (weaponType), 2), Parameter (Group = "Граната", Title = "Физический ипульс")]
+		private PhysicalForce weaponGrenade_PhysicalForce = null;
+		[ShowInEditor, ParameterCondition (nameof (weaponType), 2), ParameterAsset (Group = "Граната", Title = "Нода гранаты")]
+		private AssetLink weaponGrenade_SpawnNode = null;
+
 		void Init () {
 			System_Inputs.mouseFire += WeaponFire;
 
@@ -42,14 +57,19 @@ namespace RiboShock.Systems {
 		}
 
 		void Update () {
-			WeaponBuilder_SetTransform ();
+			//Строитель
+			if (weaponType == 0) WeaponBuilder_SetTransform ();
+			//Граната
+			if (weaponType == 2 && weaponGrenade_isActive) {
+				WeaponGrenade_Detonation (Game.IFps);
+			}
 		}
-		
+
 		void Shutdown () {
 			System_Inputs.mouseFire -= WeaponFire;
-			
+
 			if (weaponType != 0) System_Inputs.mouseAim -= WeaponAim;
-			
+
 			System_Inputs.onDestroy -= WeaponBuilder_Destroy;
 			System_Inputs.OnChangeMouseWheel_Event -= WeaponBuilder_Rotation;
 		}
@@ -70,7 +90,7 @@ namespace RiboShock.Systems {
 				}
 			}
 		}
-		
+
 		/// <summary>
 		/// Событие прицеливание
 		/// </summary>
@@ -83,7 +103,7 @@ namespace RiboShock.Systems {
 				weaponBuilder_ObjectMaket.Enabled = false;*/
 			}
 		}
-		
+
 		/// <summary>
 		/// Активация строителя
 		/// </summary>
@@ -104,7 +124,7 @@ namespace RiboShock.Systems {
 		/// </summary>
 		void WeaponBuilder_SetTransform () {
 			if (!System_Inputs.weaponActive || weaponType != 0 || weaponBuilder_ObjectMaket == null) return;
-			
+
 			weaponBuilder_ObjectMaket.Enabled = true;
 			//Позиция
 			vec3 _newPosition = node.WorldPosition + (node.WorldTransform.GetColumn3 (1) * weaponBuilder_Offset);
@@ -115,7 +135,7 @@ namespace RiboShock.Systems {
 
 			weaponBuilder_ObjectMaket.Rotate (weaponBuilder_CurAxisX, 0, 0);
 		}
-		
+
 		/// <summary>
 		/// Вращение объекта строительства
 		/// </summary>
@@ -126,7 +146,7 @@ namespace RiboShock.Systems {
 			if (!System_Inputs.weaponActive || weaponType != 0 || weaponBuilder_ObjectMaket == null) return;
 
 			weaponBuilder_CurAxisX += value * weaponBuilder_SpeedRotate;
-			
+
 			if (weaponBuilder_CurAxisX >= 360) weaponBuilder_CurAxisX = 0;
 			if (weaponBuilder_CurAxisX < 0) weaponBuilder_CurAxisX += 360;
 		}
@@ -136,7 +156,7 @@ namespace RiboShock.Systems {
 		/// </summary>
 		void WeaponBuilder_Destroy () {
 			if (weaponType != 0) return;
-			
+
 			vec3 _start = Engine.MainPlayer.WorldPosition;
 			vec3 _end = Engine.MainPlayer.GetWorldDirection () * rayDistance;
 			rayObj = World.GetIntersection (_start, _end, 1, ray);
@@ -145,6 +165,34 @@ namespace RiboShock.Systems {
 				if (rayObj.RootNode) rayObj.RootNode.DeleteLater ();
 				else rayObj.DeleteLater ();
 			}
+		}
+
+		/// <summary>
+		/// Появление гранаты
+		/// </summary>
+		/// <param name="spawnPosition">
+		/// Точка появления
+		/// </param>
+		public void WeaponGrenade_Spawn (vec3 spawnPosition) {
+			Node _newGranade = World.LoadNode (weaponGrenade_SpawnNode.AbsolutePath);
+			_newGranade.WorldPosition = spawnPosition;
+			_newGranade.ObjectBodyRigid.AddForce (Engine.MainPlayer.GetWorldDirection () * weaponGrenade_Impuls);
+		}
+
+		/// <summary>
+		/// Детонация гранаты
+		/// </summary>
+		/// <param name="delta">
+		/// Тик времени
+		/// </param>
+		void WeaponGrenade_Detonation (float delta) {
+			weaponGrenade_TimeDetonation += delta;
+			//Дитонация
+			if (weaponGrenade_TimeDetonation >= weaponGrenade_Time - .5f)
+				weaponGrenade_PhysicalForce.Enabled = true;
+			//Уничтожение гранаты
+			if (weaponGrenade_TimeDetonation > weaponGrenade_Time)
+				node.DeleteLater ();
 		}
 	}
 }

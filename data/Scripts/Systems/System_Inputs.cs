@@ -20,6 +20,7 @@ namespace RiboShock.Systems {
 		/// </summary>
 		public static void SetCustomInput (CustomKeyAssignment value) => customKeyAssignment = value;
 		static float changeTypeMove_Timer = .5f, changeTypeMove_TimerStart = .5f;
+		static float changeGrenade_Timer = 1f, changeGrenade_TimerStart = 1f;
 
 		/// <summary>
 		/// Обновление системы ввода
@@ -36,6 +37,7 @@ namespace RiboShock.Systems {
 			SetDestroy ();
 			SetInventoryActive ();
 			SetSlot ();
+			SetGrenade ();
 			//мышь
 			Input.MouseGrab = mouseGrab;
 			Input.MouseCursorHide = mouseGrab;
@@ -187,6 +189,29 @@ namespace RiboShock.Systems {
 				if (Input.IsKeyDown (customKeyAssignment.inventorySlots [_s]))
 					onSlot?.Invoke (_s);
 			}
+		}
+		
+		/// <summary>
+		/// Граната
+		/// </summary>
+		public static bool onGrenade;
+		public delegate void GrenadeActive (bool active);
+		/// <summary>
+		/// Событие активности гранаты
+		/// </summary>
+		public static event GrenadeActive OnGrenadeActive_Event;
+		/// <summary>
+		/// Собюытие гранаты
+		/// </summary>
+		static void SetGrenade () {
+			if (Input.IsKeyDown (customKeyAssignment.grenadeKey) && changeGrenade_Timer <= 0) {
+				onGrenade = true;
+				changeGrenade_Timer = changeGrenade_TimerStart;
+				OnGrenadeActive_Event?.Invoke (onGrenade);
+			}
+			//Таймер
+			if (changeGrenade_Timer > 0) changeGrenade_Timer -= Game.IFps;
+			else onGrenade = false;
 		}
 		#endregion
 

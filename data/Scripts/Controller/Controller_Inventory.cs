@@ -13,6 +13,8 @@ namespace RiboShock.Controller {
 	public class Controller_Inventory : Component {
 		[ShowInEditor, Parameter (Title = "Хранилище предметов")]
 		private Node parentItems;
+		[ShowInEditor, Parameter (Title = "Точка спавна")]
+		private Node spawnPoint;
 		
 		/// <summary>
 		/// Список предметов
@@ -31,15 +33,21 @@ namespace RiboShock.Controller {
 		/// Второе оружие
 		/// </summary>
 		private System_Item weaponSecond;
+		/// <summary>
+		/// Гранаты
+		/// </summary>
+		private List <System_Item> weaponGrenade = new List <System_Item> ();
 
 		void Init () {
 			System_Inputs.onSlot += SelectWeapon_Cell;
 			System_Inputs.OnChangeMouseWheel_Event += SelectWeapon_Wheel;
+			System_Inputs.OnGrenadeActive_Event += SelectGrenade;
 		}
 
 		void Shutdown () {
 			System_Inputs.onSlot -= SelectWeapon_Cell;
 			System_Inputs.OnChangeMouseWheel_Event -= SelectWeapon_Wheel;
+			System_Inputs.OnGrenadeActive_Event -= SelectGrenade;
 		}
 
 		/// <summary>
@@ -65,6 +73,7 @@ namespace RiboShock.Controller {
 			//Определние типа оружия
 			if (newItem.GetTypeItem () == 0) weaponFirst = newItem;
 			if (newItem.GetTypeItem () == 1) weaponSecond = newItem;
+			if (newItem.GetTypeItem () == 2) weaponGrenade.Add (newItem);
 			//Выбор подоброного оружия
 			if (weaponSelect == -1) {
 				System_Inputs.onSlot?.Invoke (newItem.GetTypeItem ());
@@ -78,6 +87,10 @@ namespace RiboShock.Controller {
 		/// Текущий предмет
 		/// </param>
 		public void RemoveItem (System_Item curItem) {
+			//Определние типа оружия
+			if (curItem.GetTypeItem () == 0) weaponFirst = null;
+			if (curItem.GetTypeItem () == 1) weaponSecond = null;
+			if (curItem.GetTypeItem () == 2) weaponGrenade.Remove (curItem);
 			//Позиция появления
 			vec3 _spawnPosition = node.WorldPosition;
 			_spawnPosition.z= .3f;
@@ -160,6 +173,17 @@ namespace RiboShock.Controller {
 				if (weaponSecond.objectWeapon.Enabled) weaponSecond.objectWeapon.WeaponBuilder_Active (true);
 				else weaponSecond.objectWeapon.WeaponBuilder_Active (false);
 			}
+		}
+
+		/// <summary>
+		/// Активация гранаты
+		/// </summary>
+		/// <param name="active">
+		/// Активна?
+		/// </param>
+		void SelectGrenade (bool active) {
+			if (weaponGrenade.Count != 0 && active)
+				weaponGrenade [0].objectWeapon.WeaponGrenade_Spawn (spawnPoint.WorldPosition);
 		}
 	}
 }

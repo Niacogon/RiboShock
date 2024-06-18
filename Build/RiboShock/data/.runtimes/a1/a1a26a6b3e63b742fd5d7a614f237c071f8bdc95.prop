@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <property version="2.18.0.1" name="System_Weapon" guid="a1a26a6b3e63b742fd5d7a614f237c071f8bdc95" parent="657ecdbbfc83135a26777f86012da3587b67be0c" editable="0">
-	<parameter name="weaponType" type="switch" title="Тип оружия" items="Строитель,Дальний бой">0</parameter>
+	<parameter name="weaponType" type="switch" title="Тип оружия" items="Строитель,Дальний бой,Граната">0</parameter>
 	<parameter name="weaponBuilder_ObjectMaket" type="node" title="Объект макета" group="Строитель" weaponType="0"/>
 	<parameter name="weaponBuilder_Object" type="node" title="Объект строительства" group="Строитель" weaponType="0"/>
 	<parameter name="weaponBuilder_Offset" type="float" title="Отступ объекта" group="Строитель" weaponType="0">5</parameter>
 	<parameter name="weaponBuilder_SpeedRotate" type="float" title="Скорость вращения" group="Строитель" weaponType="0">3</parameter>
 	<parameter name="rayDistance" type="float" title="Дистанция уничтожения" group="Строитель" weaponType="0">100</parameter>
+	<parameter name="weaponGrenade_isActive" type="toggle" title="Активна?" group="Граната" weaponType="2">1</parameter>
+	<parameter name="weaponGrenade_Impuls" type="float" title="Сила броска" group="Граната" weaponType="2">500</parameter>
+	<parameter name="weaponGrenade_Time" type="float" title="Время дитонации" group="Граната" weaponType="2">3</parameter>
+	<parameter name="weaponGrenade_PhysicalForce" type="node" title="Физический ипульс" group="Граната" weaponType="2" filter="PhysicalForce"/>
+	<parameter name="weaponGrenade_SpawnNode" type="file" title="Нода гранаты" group="Граната" weaponType="2"/>
 </property>

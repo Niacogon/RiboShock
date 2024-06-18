@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <property version="2.18.0.1" name="Controller_Inventory" guid="92699568127d9246cff330608d843f09990b8949" parent="657ecdbbfc83135a26777f86012da3587b67be0c" editable="0">
 	<parameter name="parentItems" type="node" title="Хранилище предметов"/>
+	<parameter name="spawnPoint" type="node" title="Точка спавна"/>
 </property>

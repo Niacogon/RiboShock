@@ -31,6 +31,7 @@
 		<dpi_awareness>2</dpi_awareness>
 		<fast_shutdown>1</fast_shutdown>
 		<filesystem_mmap>1</filesystem_mmap>
+		<fsr_max_contexts>8</fsr_max_contexts>
 		<gl_async_buffer>128</gl_async_buffer>
 		<gl_async_buffer_indices>16</gl_async_buffer_indices>
 		<gl_async_buffer_synchronization>1</gl_async_buffer_synchronization>
@@ -55,6 +56,8 @@
 		<shaders_preload>0</shaders_preload>
 		<splash_screen>1</splash_screen>
 		<starting_world/>
+		<streamline_application_id>0</streamline_application_id>
+		<streamline_project_id>33ff81e1-c170-5bb9-6995-d76d2664cd27</streamline_project_id>
 		<textures_cache_preload>0</textures_cache_preload>
 		<user_config>configs/default.user</user_config>
 		<video_adapter>0</video_adapter>
