@@ -2,7 +2,7 @@
 <asset version="2.18.0.1">
 	<guid>ec36079544cb516f07b15c7b146a25a30182538f</guid>
 	<type>component</type>
-	<hash>4bee46f6</hash>
+	<hash>430b037c</hash>
 	<runtimes>
 		<runtime id="ec36079544cb516f07b15c7b146a25a30182538f" name="System_Weapon.cs" link="0"/>
 		<runtime id="a1a26a6b3e63b742fd5d7a614f237c071f8bdc95" name="System_Weapon.prop" link="1" type="4"/>

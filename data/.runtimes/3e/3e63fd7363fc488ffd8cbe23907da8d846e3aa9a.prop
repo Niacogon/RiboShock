@@ -10,11 +10,11 @@
 		<parameter name="weaponBuilder_ObjectMaket" type="node" title="Объект макета" group="Строитель" weaponType="0"/>
 		<parameter name="weaponBuilder_Object" type="node" title="Объект строительства" group="Строитель" weaponType="0"/>
 		<parameter name="weaponBuilder_Offset" type="float" title="Отступ объекта" group="Строитель" weaponType="0">5</parameter>
-		<parameter name="weaponBuilder_SpeedRotate" type="float" title="Скорость вращения" group="Строитель" weaponType="0">3</parameter>
+		<parameter name="weaponBuilder_SpeedRotate" type="float" title="Скорость вращения" group="Строитель" weaponType="0">15</parameter>
 		<parameter name="rayDistance" type="float" title="Дистанция уничтожения" group="Строитель" weaponType="0">100</parameter>
 		<parameter name="weaponGrenade_isActive" type="toggle" title="Активна?" group="Граната" weaponType="2">1</parameter>
-		<parameter name="weaponGrenade_Impuls" type="float" title="Сила броска" group="Граната" weaponType="2">500</parameter>
-		<parameter name="weaponGrenade_Time" type="float" title="Время дитонации" group="Граната" weaponType="2">3</parameter>
+		<parameter name="weaponGrenade_Impuls" type="float" title="Сила броска" group="Граната" weaponType="2">1500</parameter>
+		<parameter name="weaponGrenade_Time" type="float" title="Время уничтожения" group="Граната" weaponType="2">0.0299999993</parameter>
 		<parameter name="weaponGrenade_PhysicalForce" type="node" title="Физический ипульс" group="Граната" weaponType="2" filter="PhysicalForce"/>
 		<parameter name="weaponGrenade_SpawnNode" type="file" title="Нода гранаты" group="Граната" weaponType="2"/>
 	</struct>
