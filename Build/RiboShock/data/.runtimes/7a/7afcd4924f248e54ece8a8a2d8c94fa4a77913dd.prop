@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<property version="2.18.0.1" name="System_InteractZone" guid="7afcd4924f248e54ece8a8a2d8c94fa4a77913dd" parent="657ecdbbfc83135a26777f86012da3587b67be0c" editable="0">
-	<struct name="Controller_Inventory">
-		<parameter name="parentItems" type="node" title="Хранилище предметов"/>
-		<parameter name="spawnPoint" type="node" title="Точка спавна"/>
-	</struct>
-	<parameter name="physicalTrigger" type="node" title="Физический триггер" filter="PhysicalTrigger"/>
-	<parameter name="inventory" type="property" title="Инвентарь" filter="92699568127d9246cff330608d843f09990b8949" flags="internal"/>
-</property>

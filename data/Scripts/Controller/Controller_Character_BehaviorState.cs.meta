@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<asset version="2.18.0.1">
-	<guid>60e5332b89657d822e130bcf4f214c7f34c04b33</guid>
-	<type>component</type>
-	<hash>c9805456</hash>
-	<runtimes>
-		<runtime id="60e5332b89657d822e130bcf4f214c7f34c04b33" name="Controller_Character_BehaviorState.cs" link="0"/>
-	</runtimes>
-</asset>

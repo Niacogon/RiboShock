@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<asset version="2.18.0.1">
-	<guid>abdcf89e7b828e08d56927035fc77520209dab28</guid>
-	<type>launch_settings</type>
-	<hash>4f8705c</hash>
-	<runtimes>
-		<runtime id="abdcf89e7b828e08d56927035fc77520209dab28" name="Run.launch" link="0"/>
-	</runtimes>
-</asset>
